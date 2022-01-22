@@ -51,11 +51,13 @@
 		</ScopeTypes>
 	
 		<AttackTypes>
-			<AttackType name="Rangers_CarbineAutoFire" rangeMeters="4"/>
-			<AttackType name="Rangers_RapidFireMed" rangeMeters="15"/>
-			<AttackType name="Rangers_CarbineAimedFire" rangeMeters="40"/>
-			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999"/>
+			<AttackType name="AKWildFireShort" rangeMeters="5"/>
+			<AttackType name="AKWildFirePro" rangeMeters="10"/>
+			<AttackType name="AKWildBurstPro" rangeMeters="15"/>
+			<AttackType name="AKWildBurstLong" rangeMeters="25"/>
+			<AttackType name="AKWildBurstLongXX" rangeMeters="9999"/>
 		</AttackTypes>
+
 
 		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
