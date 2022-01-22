@@ -5,7 +5,7 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban_and_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="40" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
@@ -27,7 +27,7 @@
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse1.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="40" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
@@ -48,7 +48,7 @@
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse1.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="20" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
@@ -67,7 +67,7 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="20" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
@@ -93,7 +93,7 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="25" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
@@ -117,7 +117,7 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse1.dds" windAnimated="1"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="21" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
@@ -139,7 +139,7 @@
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds" />
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="25" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
@@ -160,7 +160,7 @@
 	<Entity name="Sniper Insurgent" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="25" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
@@ -184,7 +184,7 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse2.dds" windAnimated="1"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="40" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
@@ -208,7 +208,7 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse2.dds" windAnimated="1"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="20" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
@@ -257,7 +257,7 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse2.dds" windAnimated="1"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="25" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
@@ -279,7 +279,7 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="20" />
 		<Human type="BadGuy">
 			<FOV degrees="110" distanceMeters="999" eyeRadiusMeters="1.5"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="25.0"/>
@@ -303,7 +303,7 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="25" />
 		<Human type="BadGuy">
 			<FOV degrees="110" distanceMeters="999" eyeRadiusMeters="1.5"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="25.0"/>
@@ -326,7 +326,7 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_bomb.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="40" />
 		<Human type="BadGuy">
 			<FOV degrees="110" distanceMeters="999" eyeRadiusMeters="1.5"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Suicide Combat" suppressionRecovery="35.0"/>
@@ -350,7 +350,7 @@
 	<Entity name="Concealed Insurgent" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" tooltip="@tooltip_civilian" hideInEditor="true">
 		<RenderObject3D model="data/models/humans/civilian_male_standard.khm" diffuseTex="data/models/humans/civilian_male_standard_01.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="2.1" />
 		<Human type="BadGuy">
 			<Brain startingBehavior="Concealed Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" />
 			<Id name="Concealed Insurgent" portrait="data/textures/portraits/enemy_concealed.dds" gender="0" voicePack="enemies"/>
@@ -372,7 +372,7 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse2.dds" windAnimated="1"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="20" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>			
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Executioner" suppressionRecovery="20.0"/>
@@ -395,7 +395,7 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse1.dds" windAnimated="1"/>
 		<AnimationSet name="suicide_bomb" />
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="40" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Suicide Combat" suppressionRecovery="40.0"/>
@@ -418,14 +418,14 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse1.dds" windAnimated="1"/>
 		<AnimationSet name="suicide_bomb" />
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="170" />
+		<PhysicalParams health="25" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Suicide Combat" suppressionRecovery="50.0"/>
 			<Id name="@entity_human_suicidebomber" portrait="data/textures/portraits/enemy_suicide.dds" gender="0" voicePack="enemies"/>
 			<Traits chanceToAmbush="0.0" ignoresAreaSuppression="true" />
 			<Mobility>
-				<MoveSpeed min="0.7" defaultMetersPerSec="2.45" max="11"/>
+				<MoveSpeed min="1" defaultMetersPerSec="4.20" max="13"/> <!--i do too much trolling-->
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
 
@@ -434,17 +434,12 @@
 			</Equipment>
 		</Human>
 	</Entity>
-
-	
-	<!-- Debug stuff -->
-	
-	<!-- Just for test; should do this another way later -->
 	<Entity name="Grunt Insurgent Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse1.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban_and_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="20" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat"  suppressionRecovery="10.0"/>
@@ -466,7 +461,7 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100" />
+		<PhysicalParams health="20" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
@@ -478,7 +473,7 @@
 			</Mobility>
 
 			<Equipment>
-				<!-- Item name="1911 Pistol"/-->
+				<Item name="Insurgent 1911"/>
 			</Equipment>
 		</Human>
 	</Entity>
