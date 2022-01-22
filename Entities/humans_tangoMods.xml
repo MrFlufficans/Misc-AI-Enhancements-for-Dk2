@@ -519,7 +519,6 @@
 
 			<Equipment>
 				<Item name="PM63" />
-				<!-- Removed for clarity Item name="Bodyguard SoftArmor" /-->
 			</Equipment>
 		</Human>
 	</Entity>
