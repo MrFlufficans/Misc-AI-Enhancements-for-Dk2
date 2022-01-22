@@ -69,7 +69,7 @@
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/1911.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/1911_02.dds" skipGOSSAO="true"/>
-
+		
 		<ModifiableParams
 			numPellets="1"
 			roundsPerMagazine="7"
