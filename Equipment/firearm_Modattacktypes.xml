@@ -475,8 +475,6 @@
 			critChanceAdd="-10"
 		/>
 	</AttackType>
-	
-<!--Placeholder Attacktype-->
 	<AttackType name="Nil">
 		<ModifiableParams
 			minAimTime="0"
