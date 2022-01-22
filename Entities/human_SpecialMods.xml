@@ -1,0 +1,169 @@
+<Entities>	
+	<Entity name="Generic Tango" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="50" />
+		<Human type="BadGuy">
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
+			<Id name="Tango Grunt" portrait="data/textures/portraits/enemy_grunt_rocket.dds" gender="0" voicePack="enemies"/>
+			<Traits chanceToBlindFire="0.2" stopsToShoot="false" />
+			<Mobility>
+				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="Type 56" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<Entity name="Generic Tango Shottie" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="5" />
+		<Human type="BadGuy">
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
+			<Id name="Tango Grunt" portrait="data/textures/portraits/enemy_grunt_rocket.dds" gender="0" voicePack="male_very_american"/>
+			<Traits chanceToBlindFire="0.2" stopsToShoot="true" />
+			<Mobility>
+				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="Cruiser Shotgun" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<Entity name="Generic Tango 2 M4" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/enemy_2.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_suit.khm" diffuseTex="data/models/humans/attachments/enemy_suit_01.dds"/>			
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="15" />
+		<Human type="BadGuy">
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="30.0"/>
+			<Id name="Tango Elite" portrait="data/textures/portraits/enemy_grunt_rocket.dds" gender="0" voicePack="enemies"/>
+			<Traits chanceToBlindFire="0" chanceToAmbush="0.3" stopsToShoot="false" usesSuppressionFire="true"/>
+
+			<Mobility>
+				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="M4 ACOG Tango" />
+				<Item name="Flashbang Enemy"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="Generic Tango 2 Uzi" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/enemy_2.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_suit.khm" diffuseTex="data/models/humans/attachments/enemy_suit_01.dds"/>			
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="21" />
+		<Human type="BadGuy">
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="30.0"/>
+			<Id name="Tango Elite" portrait="data/textures/portraits/enemy_grunt_rocket.dds" gender="0" voicePack="enemies"/>
+			<Traits chanceToBlindFire="0" chanceToAmbush="0.3" stopsToShoot="false" usesSuppressionFire="true"/>
+
+			<Mobility>
+				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="Mini Uzi SUP Tango" />
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="Generic Tango 3" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/civilian_war_correspondent_vest.khm" diffuseTex="data/models/humans/attachments/civilian_war_correspondent_vest.dds"/>
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="15" />
+		<Human type="BadGuy">
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
+			<Id name="Tango Medium" portrait="data/textures/portraits/enemy_grunt_rocket.dds" gender="0" voicePack="enemies"/>
+			<Traits chanceToBlindFire="0" chanceToAmbush="0.6" stopsToShoot="false" />
+			<Mobility>
+				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="Alpha AK Spectre Sup Tango" />
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="Generic Tango Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="25" />
+		<Human type="BadGuy">
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
+			<Id name="Tango Grunt" portrait="data/textures/portraits/enemy_grunt_rocket.dds" gender="0" voicePack="enemies"/>
+			<Traits chanceToBlindFire="0.2" stopsToShoot="true" />
+			<Mobility>
+				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="Generic Tango 2 Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/enemy_2.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_suit.khm" diffuseTex="data/models/humans/attachments/enemy_suit_01.dds"/>			
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="15" />
+		<Human type="BadGuy">
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="30.0"/>
+			<Id name="Tango Elite" portrait="data/textures/portraits/enemy_grunt_rocket.dds" gender="0" voicePack="enemies"/>
+			<Traits chanceToBlindFire="0" chanceToAmbush="0.3" stopsToShoot="false" usesSuppressionFire="true"/>
+			<Mobility>
+				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="Generic Tango 3 Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/civilian_war_correspondent_vest.khm" diffuseTex="data/models/humans/attachments/civilian_war_correspondent_vest.dds"/>
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100" />
+		<Human type="BadGuy">
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
+			<Id name="Tango Medium" portrait="data/textures/portraits/enemy_grunt_rocket.dds" gender="0" voicePack="enemies"/>
+			<Traits chanceToBlindFire="0" chanceToAmbush="0.6" stopsToShoot="false" />
+			<Mobility>
+				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+
+			</Equipment>
+		</Human>
+	</Entity>
+</Entities>

@@ -1,0 +1,24 @@
+<!--These entities will be laid out after i replace all maps-->
+<Entities>
+    <Entity name="VIPSpecial" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" tooltip="@tooltip_enemy_vip">
+		<RenderObject3D model="data/models/humans/civilian_male_fat.khm" diffuseTex="data/models/humans/civilian_male_standard_03.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/cia_scarf_beret.khm" diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
+		<AnimationSet name="civilian" />
+		<PhysicalParams health="2" />
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<Human type="BadGuy" isVIP="true">
+			<FOV degrees="90" distanceMeters="999"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
+			<Id name="@entity_human_vip" portrait="data/textures/portraits/enemy_vip.dds" gender="0" voicePack="male_very_american"/>
+			<Traits chanceToInvestigate="6.0" chanceToAmbush="2.0"/>
+			<Mobility>
+				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="10" max="20"/>
+			</Mobility>
+			<Equipment>
+				<Item name="Mini Uzi SUP Tango" />
+			</Equipment>
+		</Human>
+	</Entity>
+</Entities>

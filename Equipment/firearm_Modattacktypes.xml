@@ -1,0 +1,493 @@
+<FirearmAttackTypes>
+	<AttackType name="RPKStrafe">
+		<ModifiableParams
+			minAimTime="500"
+			maxAimTime="510"
+			minShots="3"
+			maxShots="10"
+			resetTime="1200"
+			accuracyAdd="25"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="RPKStrafeMed">
+		<ModifiableParams
+			minAimTime="540"
+			maxAimTime="550"
+			minShots="3"
+			maxShots="7"
+			resetTime="1200"
+			followupShotAccuracyAdd="0"
+			accuracyAdd="50"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="RPKStrafeLong">
+		<ModifiableParams
+			minAimTime="1000"
+			maxAimTime="1100"
+			minShots="1"
+			maxShots="3"
+			resetTime="1200"
+			accuracyAdd="35"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="RPKStrafeMounted">
+		<ModifiableParams
+			minAimTime="300"
+			maxAimTime="400"
+			minShots="5"
+			maxShots="25"
+			resetTime="400"
+			accuracyAdd="35"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="1"
+		/>
+	</AttackType>
+
+	<AttackType name="RPKStrafeMedMounted">
+		<ModifiableParams
+			minAimTime="300"
+			maxAimTime="400"
+			minShots="8"
+			maxShots="25"
+			resetTime="400"
+			followupShotAccuracyAdd="0"
+			accuracyAdd="65"
+			critChanceAdd="2"
+		/>
+	</AttackType>
+
+	<AttackType name="RPKStrafeLongMounted">
+		<ModifiableParams
+			minAimTime="450"
+			maxAimTime="451"
+			minShots="6"
+			maxShots="20"
+			resetTime="500"
+			accuracyAdd="25"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="UziWildFireClose">
+		<ModifiableParams
+			minAimTime="250"
+			maxAimTime="270"
+			minShots="5"
+			maxShots="12"
+			resetTime="400"
+			accuracyAdd="30"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="UziWildFire">
+		<ModifiableParams
+			minAimTime="280"
+			maxAimTime="290"
+			minShots="5"
+			maxShots="12"
+			resetTime="400"
+			accuracyAdd="35"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="AKWildFire">
+		<ModifiableParams
+			minAimTime="250"
+			maxAimTime="300"
+			minShots="3"
+			maxShots="10"
+			resetTime="500"
+			accuracyAdd="15"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="AKWildFirePro">
+		<ModifiableParams
+			minAimTime="200"
+			maxAimTime="210"
+			minShots="3"
+			maxShots="7"
+			resetTime="500"
+			accuracyAdd="25"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="1"
+		/>
+	</AttackType>
+
+	<AttackType name="AKWildFireShort">
+		<ModifiableParams
+			minAimTime="270"
+			maxAimTime="300"
+			minShots="7"
+			maxShots="10"
+			resetTime="200"
+			accuracyAdd="16"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="AKWildBurst">
+		<ModifiableParams
+			minAimTime="600"
+			maxAimTime="800"
+			minShots="4"
+			maxShots="8"
+			resetTime="500"
+			accuracyAdd="15"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="AKWildBurstPro">
+		<ModifiableParams
+			minAimTime="450"
+			maxAimTime="460"
+			minShots="4"
+			maxShots="7"
+			resetTime="500"
+			accuracyAdd="25"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="1"
+		/>
+	</AttackType>
+
+	<AttackType name="AKWildBurstLong">
+		<ModifiableParams
+			minAimTime="500"
+			maxAimTime="1000"
+			minShots="3"
+			maxShots="6"
+			resetTime="800"
+			accuracyAdd="-5"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="AKWildBurstLongXX">
+		<ModifiableParams
+			minAimTime="600"
+			maxAimTime="700"
+			minShots="3"
+			maxShots="6"
+			resetTime="800"
+			accuracyAdd="-5"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="FAL_RapidFireMed">
+		<ModifiableParams
+			minAimTime="350"
+			maxAimTime="400"
+			minShots="1"
+			maxShots="4"
+			resetTime="200"
+			accuracyAdd="50"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="FAL_AimedFire">
+		<ModifiableParams
+			minAimTime="400"
+			maxAimTime="410"
+			roundsPerSecondOverride="2.3"
+			minShots="1"
+			maxShots="2"
+			resetTime="400"
+			accuracyAdd="55"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="FAL_AimedFireXX">
+		<ModifiableParams
+			minAimTime="450"
+			maxAimTime="500"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="400"
+			accuracyAdd="60"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="SVD_TooClose">
+		<ModifiableParams
+			minAimTime="350"
+			maxAimTime="360"
+			minShots="1"
+			maxShots="2"
+			resetTime="500"
+			accuracyAdd="-1"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="-50"
+		/>
+	</AttackType>
+
+	<AttackType name="SVD_QuickFire">
+		<ModifiableParams
+			minAimTime="360"
+			maxAimTime="370"
+			minShots="1"
+			maxShots="3"
+			resetTime="500"
+			accuracyAdd="15"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="SVD_AimedFire">
+		<ModifiableParams
+			minAimTime="370"
+			maxAimTime="390"
+			minShots="1"
+			maxShots="1"
+			resetTime="1000"
+			accuracyAdd="40"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="SVD_AimedFireXX">
+		<ModifiableParams
+			minAimTime="400"
+			maxAimTime="450"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="400"
+			accuracyAdd="35"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+
+	<AttackType name="EnemyExpert_Burst">
+		<ModifiableParams
+			minAimTime="250"
+			maxAimTime="260"
+			minShots="3"
+			maxShots="6"
+			resetTime="300"
+			accuracyAdd="50"
+			followupShotAccuracyAdd="-1"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="EnemyExpert_BurstMed">
+		<ModifiableParams
+			minAimTime="260"
+			maxAimTime="270"
+			minShots="3"
+			maxShots="7"
+			resetTime="150"
+			accuracyAdd="45"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="3"
+		/>
+	</AttackType>
+
+	<AttackType name="EnemyExpert_MedFire">
+		<ModifiableParams
+			minAimTime="270"
+			maxAimTime="280"
+			roundsPerSecondOverride="5"
+			minShots="2"
+			maxShots="4"
+			resetTime="150"
+			accuracyAdd="40"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="EnemyExpert_AimedFire">
+		<ModifiableParams
+			minAimTime="300"
+			maxAimTime="350"
+			roundsPerSecondOverride="4"
+			minShots="1"
+			maxShots="2"
+			resetTime="500"
+			accuracyAdd="10"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="EnemyExpert_AimedFireXX">
+		<ModifiableParams
+			minAimTime="400"
+			maxAimTime="450"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="3"
+			resetTime="900"
+			accuracyAdd="1"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="-5"
+		/>
+	</AttackType>
+
+	<AttackType name="RPG_Aimed">
+		<ModifiableParams
+			minAimTime="1600"
+			maxAimTime="2400"
+			minShots="1"
+			maxShots="1"
+			resetTime="1000"
+			accuracyAdd="0"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="RPG_QuickAimClose">
+		<ModifiableParams
+			minAimTime="1000"
+			maxAimTime="1200"
+			minShots="1"
+			maxShots="1"
+			resetTime="1000"
+			accuracyAdd="0"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="RPG_QuickAim">
+		<ModifiableParams
+			minAimTime="1200"
+			maxAimTime="2000"
+			minShots="1"
+			maxShots="1"
+			resetTime="1000"
+			accuracyAdd="-5"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="Enemy_GruntPistolClose">
+		<ModifiableParams
+			minAimTime="220"
+			maxAimTime="230"
+			minShots="1"
+			maxShots="-1"
+			resetTime="200"
+			accuracyAdd="50"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="-5"
+		/>
+	</AttackType>
+
+	<AttackType name="Enemy_GruntPistolMed">
+		<ModifiableParams
+			minAimTime="250"
+			maxAimTime="260"
+			minShots="1"
+			maxShots="1"
+			resetTime="200"
+			accuracyAdd="10"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="Enemy_GruntPistolLong">
+		<ModifiableParams
+			minAimTime="300"
+			maxAimTime="350"
+			minShots="1"
+			maxShots="1"
+			resetTime="300"
+			accuracyAdd="5"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+	
+	<AttackType name="Tango_PumpFire">
+		<ModifiableParams
+			minAimTime="250"
+			maxAimTime="250"
+			minShots="1"
+			maxShots="1"
+			resetTime="100"
+			accuracyAdd="45"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+	
+		/>
+	</AttackType>
+
+	<AttackType name="Tango_PumpFireLong">
+		<ModifiableParams
+			minAimTime="300"
+			maxAimTime="300"
+			minShots="1"
+			maxShots="1"
+			resetTime="600"
+			accuracyAdd="30"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="-1"
+		/>
+	</AttackType>
+
+	<AttackType name="Tango_PumpFireLongXX">
+		<ModifiableParams
+			minAimTime="450"
+			maxAimTime="505"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="1100"
+			accuracyAdd="25"
+			followupShotAccuracyAdd="1"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+	
+<!--Placeholder Attacktype-->
+	<AttackType name="Nil">
+		<ModifiableParams
+			minAimTime="0"
+			maxAimTime="0"
+			roundsPerSecondOverride="1"
+			minShots="0"
+			maxShots="0"
+			resetTime="0"
+			accuracyAdd="0"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+</FirearmAttackTypes>
