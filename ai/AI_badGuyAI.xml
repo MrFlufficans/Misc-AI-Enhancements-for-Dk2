@@ -1,6 +1,5 @@
 
 <Behaviors>
-	<!-- If you add new events here, make sure to update Concealed Guy below -->
 	<Behavior name="Normal Guy">
 		<Bind evt="IDLE_TICK" 			prio="0" activity="IDLE_RELAXED" />
 		<Bind evt="CMD_PATROL" 			prio="1" activity="IDLE_RELAXED" />
@@ -47,7 +46,7 @@
 		<Bind evt="SEE_ENEMY" 			prio="30" activity="ENGAGE_SUICIDE" />
 	</Behavior>
 	
-	<Behavior name="Executioner"> <!-- combat behavior, name is important, causes the countdown timer to appear -->
+	<Behavior name="Executioner"> 
 		<Bind evt="IDLE_TICK" 			prio="0" activity="IDLE_COMBAT" />
 		<Bind evt="CMD_PATROL" 			prio="1" activity="IDLE_COMBAT" />
 		<Bind evt="HEAR_SNIPER_SHOT" 		prio="4" activity="INVESTIGATE" />
