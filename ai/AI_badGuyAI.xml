@@ -51,7 +51,7 @@
 		<Bind evt="IDLE_TICK" 				prio="0" activity="IDLE_COMBAT" />
 		<Bind evt="CMD_PATROL" 				prio="1" activity="IDLE_COMBAT" />
 		<Bind evt="HEAR_SNIPER_SHOT" 		prio="4" activity="INVESTIGATE" />
-		<Bind evt="SEE_FRIENDLY_COMBAT" 	prio="4" activity="INVESTIGATE" />
+		<Bind evt="SEE_FRIENDLY_COMBAT" 	prio="4" activity="IDLE_COMBAT" />
 		<Bind evt="HEAR_SUSPICIOUS" 		prio="5" activity="INVESTIGATE" />
 		<Bind evt="SEE_DOOR_OPEN" 			prio="5" activity="INVESTIGATE" />
 		<Bind evt="SEE_FRIENDLY_EXECUTING"	prio="6" activity="EXECUTE_HOSTAGE" /> 	<!-- These Activities are what I meant by being Careful -->
