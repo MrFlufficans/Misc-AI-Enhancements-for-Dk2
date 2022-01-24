@@ -473,7 +473,7 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="Insurgent 1911"/>
+				<!--<Item name="Insurgent 1911"/>-->
 			</Equipment>
 		</Human>
 	</Entity>
