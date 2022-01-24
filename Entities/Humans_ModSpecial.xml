@@ -9,7 +9,7 @@
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<Human type="BadGuy" isVIP="true">
 			<FOV degrees="90" distanceMeters="999"/>
-			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
+			<Brain startingBehavior="Concealed Guy" defaultBehavior="Concealed Guy" combatBehavior="Concealed Guy" suppressionRecovery="20.0"/>
 			<Id name="@entity_human_vip" portrait="data/textures/portraits/enemy_vip.dds" gender="0" voicePack="male_very_american"/>
 			<Traits chanceToInvestigate="6.0" chanceToAmbush="2.0"/>
 			<Mobility>
