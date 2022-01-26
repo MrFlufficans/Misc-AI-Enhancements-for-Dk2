@@ -1,4 +1,4 @@
-<!--These entities will be laid out after i replace all maps-->
+<!--These entities will be laid out after i place them around all vanilla maps-->
 <Entities>
     <Entity name="VIPSpecial" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" tooltip="@tooltip_enemy_vip">
 		<RenderObject3D model="data/models/humans/civilian_male_fat.khm" diffuseTex="data/models/humans/civilian_male_standard_03.dds"/>

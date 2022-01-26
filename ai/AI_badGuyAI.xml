@@ -1,4 +1,3 @@
-
 <Behaviors>
 	<Behavior name="Normal Guy">
 		<Bind evt="IDLE_TICK" 				prio="0" activity="IDLE_RELAXED"/>
@@ -46,6 +45,7 @@
 		<Bind evt="SEE_ENEMY" 				prio="30" activity="ENGAGE_SUICIDE"/>
 	</Behavior>
 	
+	<!--Changes to executioners: will not always shoot hostage and might engage you-->
 	<Behavior name="Executioner"> 
 		<Bind evt="IDLE_TICK" 				prio="0" activity="IDLE_COMBAT"/>
 		<Bind evt="CMD_PATROL" 				prio="1" activity="IDLE_COMBAT"/>
@@ -62,7 +62,8 @@
 		<Bind evt="CMD_RUN_TO" 				prio="6" activity="IDLE_COMBAT"/>
 		<Bind evt="IN_BLAST_RADIUS" 		prio="14" activity="AVOID_RADIUS"/>
 	</Behavior>
-	
+
+	<!--(they are now extremely based)-->
 
 	<Behavior name="VIP">
 		<Bind evt="IDLE_TICK" 				prio="0" activity="IDLE_RELAXED"/>
@@ -78,6 +79,7 @@
 		<Bind evt="IN_BLAST_RADIUS" 		prio="12" becomeAlerted="1" activity="AVOID_RADIUS"/>
 	</Behavior>
 
+<!--he kinda dum dum, shoot a little to make him go shit somewhere else-->
 	<Behavior name="Civilian"> 
 		<Bind evt="IDLE_TICK" 				prio="0" activity="IDLE_RELAXED"/>
 		<Bind evt="CMD_PATROL" 				prio="1" activity="IDLE_RELAXED"/>
@@ -88,7 +90,8 @@
 		<Bind evt="IN_BLAST_RADIUS"			prio="12" becomeAlerted="1" activity="SWITCH_TO_COMBAT"/>
 		<Bind evt="TAKE_SCATTER_DAMAGE" 	prio="13" becomeAlerted="1" activity="SWITCH_TO_COMBAT"/>
 	</Behavior>
-	
+	<!--he no dum dum anymore he will go shit somewhere else-->
+
 	<Behavior name="Civilian Combat">
 		<Bind evt="IDLE_TICK" 				prio="0" activity="FLEE"/>
 		<Bind evt="HEAR_COMBAT" 			prio="4" activity="FLEE"/>

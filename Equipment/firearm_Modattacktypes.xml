@@ -1,3 +1,5 @@
+<!--Hi be based like me and keep the min reaction time below 500 if close, below 700 if med, below 1k if long-->
+<!--The above statement only applies if you're adding shit-->
 <FirearmAttackTypes>
 	<AttackType name="RPKStrafe">
 		<ModifiableParams
