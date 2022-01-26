@@ -569,6 +569,8 @@
 		</Human>
 	</Entity>
 
+
+<!-- HVT -->
 	<Entity name="Bodyguard AKSU" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false"/>
         <RenderObject3D model="data/models/humans/civilian_male_fat.khm" diffuseTex="data/models/humans/civilian_male_standard_03.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/cia_scarf_beret.khm" diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds"/>
