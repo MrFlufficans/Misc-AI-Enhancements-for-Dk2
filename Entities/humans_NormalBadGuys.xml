@@ -418,14 +418,14 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse1.dds" windAnimated="1"/>
 		<AnimationSet name="suicide_bomb" />
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="25" />
+		<PhysicalParams health="170" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Suicide Combat" suppressionRecovery="50.0"/>
 			<Id name="@entity_human_suicidebomber" portrait="data/textures/portraits/enemy_suicide.dds" gender="0" voicePack="enemies"/>
 			<Traits chanceToAmbush="0.0" ignoresAreaSuppression="true" />
 			<Mobility>
-				<MoveSpeed min="1" defaultMetersPerSec="4.20" max="13"/> <!--i do too much trolling-->
+				<MoveSpeed min="0.7" defaultMetersPerSec="2.45" max="11"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
 
@@ -434,6 +434,7 @@
 			</Equipment>
 		</Human>
 	</Entity>
+
 	<Entity name="Grunt Insurgent Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse1.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
