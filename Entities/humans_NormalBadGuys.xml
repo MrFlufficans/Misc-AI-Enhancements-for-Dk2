@@ -570,25 +570,25 @@
 	</Entity>
 
 
-<!-- HVT -->
 	<Entity name="Bodyguard AKSU" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/civilian_male_fat.khm" diffuseTex="data/models/humans/civilian_male_standard_03.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/cia_scarf_beret.khm" diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds"/>
+		<RenderObject3D model="data/models/humans/enemy_2.khm" diffuseTex="data/models/humans/enemy_base_diffuse5.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
-		<AnimationSet name="civilian" />
-		<PhysicalParams health="2" />
+		<RenderObject3D model="data/models/humans/attachments/enemy_suit.khm" diffuseTex="data/models/humans/attachments/enemy_suit_01.dds"/>			
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="10" />
 		<Human type="BadGuy">
-			<FOV degrees="90" distanceMeters="999"/>
-			<Brain startingBehavior="Concealed Guy" defaultBehavior="Concealed Guy" combatBehavior="Concealed Guy" suppressionRecovery="20.0"/>
-			<Id name="@entity_human_vip" portrait="data/textures/portraits/enemy_vip.dds" gender="0" voicePack="male_very_american"/>
-			<Traits chanceToInvestigate="6.0" chanceToAmbush="2.0"/>
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
+			<Id name="Private Security" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
+			<Traits chanceToBlindFire="0.0" stopsToShoot="true" />
 			<Mobility>
-				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
-				<TurnSpeed min="6" defaultMetersPerSec="10" max="20"/>
+				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
+
 			<Equipment>
-				<Item name="Mini Uzi SUP Tango" />
+				<Item name="AKS 74U"/> 
+				<!-- Removed for clarity Item name="Bodyguard SoftArmor" /-->
 			</Equipment>
 		</Human>
 	</Entity>
@@ -598,7 +598,7 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_suit.khm" diffuseTex="data/models/humans/attachments/enemy_suit_01.dds"/>			
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="5" />
+		<PhysicalParams health="3" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
