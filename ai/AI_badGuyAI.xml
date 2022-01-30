@@ -55,10 +55,10 @@
 		<Bind evt="SEE_FRIENDLY_COMBAT" 	prio="4" activity="IDLE_COMBAT"/>
 		<Bind evt="HEAR_SUSPICIOUS" 		prio="5" activity="INVESTIGATE"/>
 		<Bind evt="SEE_DOOR_OPEN" 			prio="5" activity="INVESTIGATE"/>
-		<Bind evt="SEE_FRIENDLY_EXECUTING"	prio="14" activity="EXECUTE_HOSTAGE"/>		<!-- These Activities are what I meant by being Careful -->
-		<Bind evt="SEE_ENEMY" 				prio="15" activity="ENGAGE_ENEMY"/>		<!-- If you mess with this too much you might make them -->
-		<Bind evt="HEAR_ALARM" 				prio="2" activity="EXECUTE_HOSTAGE"/>		<!-- not execute hostages at all because on how Prioities are done-->
-		<Bind evt="SEE_DEAD_FRIENDLY" 		prio="3" activity="EXECUTE_HOSTAGE"/>
+		<Bind evt="SEE_FRIENDLY_EXECUTING"	prio="9" activity="EXECUTE_HOSTAGE"/>		<!-- These Activities are what I meant by being Careful -->
+		<Bind evt="SEE_ENEMY" 				prio="17" activity="ENGAGE_ENEMY"/>		<!-- If you mess with this too much you might make them -->
+		<Bind evt="HEAR_ALARM" 				prio="8" activity="EXECUTE_HOSTAGE"/>		<!-- not execute hostages at all because on how Prioities are done-->
+		<Bind evt="SEE_DEAD_FRIENDLY" 		prio="7" activity="EXECUTE_HOSTAGE"/>
 		<Bind evt="CMD_RUN_TO" 				prio="6" activity="IDLE_COMBAT"/>
 		<Bind evt="IN_BLAST_RADIUS" 		prio="14" activity="AVOID_RADIUS"/>
 	</Behavior>

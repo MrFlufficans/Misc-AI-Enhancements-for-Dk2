@@ -92,7 +92,7 @@
 
 	<AttackType name="UziWildFire">
 		<ModifiableParams
-			minAimTime="280"
+			minAimTime="270"
 			maxAimTime="290"
 			minShots="5"
 			maxShots="12"
@@ -105,7 +105,7 @@
 
 	<AttackType name="AKWildFire">
 		<ModifiableParams
-			minAimTime="250"
+			minAimTime="245"
 			maxAimTime="300"
 			minShots="3"
 			maxShots="10"

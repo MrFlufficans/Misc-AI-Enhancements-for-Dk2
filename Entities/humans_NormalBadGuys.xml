@@ -418,7 +418,7 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse1.dds" windAnimated="1"/>
 		<AnimationSet name="suicide_bomb" />
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="170" />
+		<PhysicalParams health="10" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Suicide Combat" suppressionRecovery="50.0"/>
