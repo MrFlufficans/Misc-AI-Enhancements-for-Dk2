@@ -1,14 +1,10 @@
 <!--Human "Variables"
 enemies are now much more RNG on health-->
+<!--Note for Later: DO NOTE RELEASE WITHOUT PROPER TESTING!-->
 <Equipment>
 	<Armor name="Human Variables" inventoryBinding="Armor" unlockCost="0"
-			tooltip="@armor_rangers_noplates_name"
-			description="@armor_rangers_noplates_desc"
-			img="data/models/equipment/armor_noplates_ui.dds"
-			img_tooltip="data/models/equipment/armor_02_ui_ttip.tga"
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="0"/>
-
 		<Params protectionInfoText="@equipment_protect1">
 			<ProtectionArc degrees="90" coveragePercent="40" piercingProtectionLevel="3"/>
 			<ProtectionArc degrees="270" coveragePercent="20" piercingProtectionLevel="3"/>
@@ -16,3 +12,4 @@ enemies are now much more RNG on health-->
 		</Params>
 	</Armor>
 </Equipment>
+<!--Yes i named a "vest" Human variables sue me-->

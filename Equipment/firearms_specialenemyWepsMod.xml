@@ -213,7 +213,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
 		</MuzzleFlash>
 
-		<Sounds> <!-- max 4 variants for each action -->
+		<Sounds> 
 			<Equip name="rifle_eqp"/>
 			<Unequip name="rifle_neqp"/>
 			<Reload name="rifle_reld"/>
@@ -288,7 +288,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_04" />
 		</MuzzleFlash>
 
-		<Sounds> <!-- max 4 variants for each action -->
+		<Sounds> 
 			<Equip name="870br_eqp"/>
 			<Unequip name="870br_neqp"/>
 			<Reload name="870br_reld"/>

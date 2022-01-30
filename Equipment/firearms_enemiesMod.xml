@@ -956,7 +956,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
 		</MuzzleFlash>
 
-		<Sounds> <!-- max 4 variants for each action -->
+		<Sounds> 
 			<Equip name="pistol_eqp"/>
 			<Unequip name="pistol_neqp"/>
 			<Reload name="pistol_reld"/>

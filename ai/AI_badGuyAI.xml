@@ -14,12 +14,12 @@
 		<Bind evt="SEE_ENEMY" 				prio="10" activity="SWITCH_TO_COMBAT"/>
 		<Bind evt="CMD_SUPPRESS_FIRE" 		prio="11" activity="SWITCH_TO_COMBAT"/>
 		<Bind evt="IN_BLAST_RADIUS" 		prio="12" becomeAlerted="1" activity="AVOID_RADIUS"/>
-		<Bind evt="HEAR_ALARM" 				prio="13" activity="SWITCH_TO_COMBAT"/>
+		<Bind evt="HEAR_ALARM" 				prio="15" activity="SWITCH_TO_COMBAT"/>
 	</Behavior>
 	
 	<Behavior name="Concealed Guy">
 		<Bind evt="IDLE_TICK" 				prio="0" activity="IDLE_SNEAK"/>
-		<Bind evt="CMD_PATROL" 				prio="1" activity=""/>
+		<Bind evt="CMD_PATROL" 				prio="1" activity="IDLE_SNEAK"/>
 		<Bind evt="SEE_FRIENDLY_COMBAT" 	prio="3" becomeAlerted="1" activity="SWITCH_TO_DEFAULT"/>
 		<Bind evt="HEAR_COMBAT" 			prio="4" becomeAlerted="1" activity="IDLE_SNEAK"/>
 		<Bind evt="CMD_RUN_TO" 				prio="4" activity="IDLE_SNEAK"/>

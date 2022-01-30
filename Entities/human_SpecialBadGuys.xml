@@ -3,7 +3,7 @@
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="50" />
+		<PhysicalParams health="25" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
@@ -16,6 +16,7 @@
 
 			<Equipment>
 				<Item name="Type 56" />
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -37,6 +38,7 @@
 
 			<Equipment>
 				<Item name="Cruiser Shotgun" />
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -59,6 +61,7 @@
 
 			<Equipment>
 				<Item name="M4 ACOG Tango" />
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -67,7 +70,7 @@
 		<RenderObject3D model="data/models/humans/enemy_2.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_suit.khm" diffuseTex="data/models/humans/attachments/enemy_suit_01.dds"/>			
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="21" />
+		<PhysicalParams health="20" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="30.0"/>
@@ -81,6 +84,7 @@
 
 			<Equipment>
 				<Item name="Mini Uzi SUP Tango" />
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -102,6 +106,7 @@
 
 			<Equipment>
 				<Item name="Alpha AK Spectre Sup Tango" />
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -110,7 +115,7 @@
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="25" />
+		<PhysicalParams health="15" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
@@ -122,6 +127,7 @@
 			</Mobility>
 
 			<Equipment>
+			<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -142,7 +148,7 @@
 			</Mobility>
 
 			<Equipment>
-				
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -151,7 +157,7 @@
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/civilian_war_correspondent_vest.khm" diffuseTex="data/models/humans/attachments/civilian_war_correspondent_vest.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="10" />
+		<PhysicalParams health="15" />
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
@@ -163,7 +169,7 @@
 			</Mobility>
 
 			<Equipment>
-
+			<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>

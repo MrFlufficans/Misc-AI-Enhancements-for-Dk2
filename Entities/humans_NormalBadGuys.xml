@@ -11,7 +11,7 @@
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
 
 			<Id name="Grunt Insurgent" portrait="data/textures/portraits/enemy_grunt_ak.dds" gender="0" voicePack="enemies"/>
-			<Traits chanceToBlindFire="0.5" stopsToShoot="false"/>
+			<Traits chanceToBlindFire="0.5" stopsToShoot="false" roamAround="true"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -19,6 +19,7 @@
 
 			<Equipment>
 				<Item name="Type 56 Noob"/>
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -32,7 +33,7 @@
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
 			<Id name="Pistol Insurgent" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
-			<Traits chanceToBlindFire="0.0" stopsToShoot="false" />
+			<Traits stopsToShoot="false" roamAround="true"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -40,6 +41,7 @@
 
 			<Equipment>
 				<Item name="TT 33 Pistol" />
+				<Item name="Human Variables"/>				
 			</Equipment>
 		</Human>
 	</Entity>
@@ -58,6 +60,9 @@
 				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
+			<Equipment>
+			<Item name="Human Variables"/>
+			</Equipment>
 		</Human>
 	</Entity>
 		
@@ -71,7 +76,7 @@
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
-			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" />
+			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" roamAround="true"/>
 			<Id name="Veteran Insurgent" portrait="data/textures/portraits/enemy_veteran.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
@@ -79,9 +84,9 @@
 			</Mobility>
 
 			<Equipment>
-				<!-- Item name="1911 Pistol"/-->
-				<Item name="AKS 74U"/> <!-- AK47 -->
+				<Item name="AKS 74U"/>
 				<Item name="Frag Grenade"/>
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -97,7 +102,7 @@
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
-			<Traits chanceToAmbush="0.7" usesSuppressionFire="true"/>
+			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" roamAround="true"/>
 			<Id name="Veteran Insurgent" portrait="data/textures/portraits/enemy_veteran.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
@@ -107,6 +112,7 @@
 			<Equipment>
 				<Item name="FAL Rifle"/> 
 				<Item name="Frag Grenade"/>
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -121,7 +127,7 @@
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
-			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" />
+			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" roamAround="true"/>
 			<Id name="Rocket Insurgent" portrait="data/textures/portraits/enemy_rocket.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
@@ -130,7 +136,7 @@
 			
 			<Equipment>
 				<Item name="RPG 7"/>
-				<!-- Item name="1911 Pistol"/-->
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -143,7 +149,7 @@
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
-			<Traits chanceToBlindFire="0.5" stopsToShoot="false" chanceToThrowGrenade="0.10" />
+			<Traits chanceToBlindFire="0.5" stopsToShoot="false" chanceToThrowGrenade="0.10"  roamAround="true"/>
 			<Id name="Grunt and Rocket Insurgent" portrait="data/textures/portraits/enemy_grunt_rocket.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
@@ -153,6 +159,7 @@
 			<Equipment>
 				<Item name="Type 56"/>
 				<Item name="RPG 26"/>
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -164,7 +171,7 @@
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
-			<Traits chanceToBlindFire="0" stopsToShoot="false" chanceToThrowGrenade="0.0" />
+			<Traits chanceToBlindFire="0" stopsToShoot="false" chanceToThrowGrenade="0.0" roamAround="true"/>
 			<Id name="Sniper Insurgent" portrait="data/textures/portraits/enemy_grunt_rocket.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
@@ -173,6 +180,7 @@
 
 			<Equipment>
 				<Item name="SVD63"/>
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -188,7 +196,7 @@
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
-			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true"/>
+			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true" roamAround="true"/>
 			<Id name="Insurgent Machinegunner" portrait="data/textures/portraits/enemy_machinegun.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
@@ -197,6 +205,8 @@
 
 			<Equipment>
 				<Item name="RPK 74 LMG"/>
+				<Item name="Human Variables"/>
+				<Item name="Frag Grenade"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -212,7 +222,7 @@
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
-			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true"/>
+			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true" roamAround="true"/>
 			<Id name="Insurgent Machinegunner" portrait="data/textures/portraits/enemy_machinegun.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
@@ -221,6 +231,8 @@
 
 			<Equipment>
 				<Item name="RPK LMG"/>
+				<Item name="Human Variables"/>
+				<Item name="Frag Grenade"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -238,7 +250,7 @@
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
 
 			<Id name="Machine Gunner" portrait="data/textures/portraits/enemy_grunt_ak.dds" gender="0" voicePack="enemies"/>
-			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true"/>
+			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true" roamAround="true"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -246,6 +258,7 @@
 
 			<Equipment>
 				<Item name="RP46_MG"/> 
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -261,7 +274,7 @@
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
-			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true"/>
+			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true" roamAround="true"/>
 			<Id name="Insurgent Machinegunner" portrait="data/textures/portraits/enemy_machinegun.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
@@ -269,6 +282,8 @@
 			</Mobility>
 
 			<Equipment>
+			<Item name="Human Variables"/>
+			<Item name="Frag Grenade" />
 			</Equipment>
 		</Human>
 	</Entity>
@@ -283,7 +298,7 @@
 		<Human type="BadGuy">
 			<FOV degrees="110" distanceMeters="999" eyeRadiusMeters="1.5"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="25.0"/>
-			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" />
+			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" roamAround="true"/>
 			<Id name="Foreign Advisor" portrait="data/textures/portraits/enemy_concealed.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="13.5"/>
@@ -293,6 +308,7 @@
 			<Equipment>
 				<Item name="SR3_M"/>
 				<Item name="TT 33 Pistol"/>
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -307,19 +323,23 @@
 		<Human type="BadGuy">
 			<FOV degrees="110" distanceMeters="999" eyeRadiusMeters="1.5"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="25.0"/>
-			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" />
+			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" roamAround="true"/>
 			<Id name="Foreign Advisor" portrait="data/textures/portraits/enemy_concealed.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="13.5"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
-
 			<Equipment>
+			<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
 
 
+
+<!--Note for later:
+
+when this Foreign Fanatic dude gets norm,alized, update mod to make him more baalcned-->
 	<Entity name="Foreign Advisor Fanatic" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" hideInEditor="true">
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse3.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse3.dds" windAnimated="1"/>
@@ -330,7 +350,7 @@
 		<Human type="BadGuy">
 			<FOV degrees="110" distanceMeters="999" eyeRadiusMeters="1.5"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Suicide Combat" suppressionRecovery="35.0"/>
-			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" ignoresAreaSuppression="true" />
+			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" ignoresAreaSuppression="true" roamAround="true"/>
 			<Id name="Fanatical Foreigner" portrait="data/textures/portraits/enemy_concealed.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="13.5"/>
@@ -353,10 +373,12 @@
 		<PhysicalParams health="2.1" />
 		<Human type="BadGuy">
 			<Brain startingBehavior="Concealed Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" />
+			<Traits chanceToAmbush="0.7" roamAround="true"/>
 			<Id name="Concealed Insurgent" portrait="data/textures/portraits/enemy_concealed.dds" gender="0" voicePack="enemies"/>
 			<IdConcealed name="Civilian" portrait="data/textures/portraits/civilian_male.dds" gender="0" voicePack="enemies"/>
 			<Equipment>
 				<Item name="Type 56"/>
+				<Item name="Human Variables"/>
 			</Equipment>
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Mobility>
@@ -377,14 +399,15 @@
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>			
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Executioner" suppressionRecovery="20.0"/>
 			<Id name="@entity_human_executioner" portrait="data/textures/portraits/enemy_executioner.dds" gender="0" voicePack="enemies"/>
-			<Traits aggressiveness="0.7" chanceToInvestigate="0.2" />
+			<Traits aggressiveness="0.7" chanceToInvestigate="0.2" roamAround="true"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
 
 			<Equipment>
-				<Item name="Type 56"/> <!-- AK47 -->
+				<Item name="Type 56"/> 
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -400,7 +423,7 @@
 			<FOV degrees="90" distanceMeters="999"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Suicide Combat" suppressionRecovery="40.0"/>
 			<Id name="@entity_human_suicidebomber" portrait="data/textures/portraits/enemy_suicide.dds" gender="0" voicePack="enemies"/>
-			<Traits chanceToAmbush="0.0" ignoresAreaSuppression="true" />
+			<Traits chanceToAmbush="0.0" ignoresAreaSuppression="true" roamAround="true"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -408,6 +431,7 @@
 
 			<Equipment>
 				<Item name="Suicide Bomb"/>
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -423,7 +447,7 @@
 			<FOV degrees="90" distanceMeters="999"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Suicide Combat" suppressionRecovery="50.0"/>
 			<Id name="@entity_human_suicidebomber" portrait="data/textures/portraits/enemy_suicide.dds" gender="0" voicePack="enemies"/>
-			<Traits chanceToAmbush="0.0" ignoresAreaSuppression="true" />
+			<Traits chanceToAmbush="0.0" ignoresAreaSuppression="true" roamAround="true"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="2.45" max="11"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -431,6 +455,7 @@
 
 			<Equipment>
 				<Item name="Suicide Bomb"/>
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -445,7 +470,7 @@
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat"  suppressionRecovery="10.0"/>
 			<Id name="Grunt Insurgent" portrait="data/textures/portraits/enemy_grunt_ak.dds" gender="0" voicePack="enemies"/>
-			<Traits chanceToBlindFire="0.5" stopsToShoot="false"/>
+			<Traits chanceToBlindFire="0.5" stopsToShoot="false" roamAround="true"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -466,7 +491,7 @@
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
-			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" />
+			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" roamAround="true"/>
 			<Id name="Veteran Insurgent" portrait="data/textures/portraits/enemy_veteran.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
@@ -474,7 +499,7 @@
 			</Mobility>
 
 			<Equipment>
-				<!--<Item name="Insurgent 1911"/>-->
+			<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -489,15 +514,14 @@
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
-			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" chanceToThrowGrenade="0.10" />
+			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" chanceToThrowGrenade="0.10" roamAround="true"/>
 			<Id name="Rocket Insurgent" portrait="data/textures/portraits/enemy_rocket.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="1.83" max="10"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
-			
 			<Equipment>
-				<!-- Item name="1911 Pistol"/-->
+			<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -512,7 +536,7 @@
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
 			<Id name="Private Security" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
-			<Traits chanceToBlindFire="0.5" stopsToShoot="false" />
+			<Traits chanceToBlindFire="0.5" stopsToShoot="false" roamAround="true"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -520,6 +544,7 @@
 
 			<Equipment>
 				<Item name="PM63" />
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -533,7 +558,7 @@
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
 			<Id name="Private Security" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
-			<Traits chanceToBlindFire="0.0" stopsToShoot="false" />
+			<Traits chanceToBlindFire="0.0" stopsToShoot="false" roamAround="true"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -557,7 +582,7 @@
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
 			<Id name="Private Security" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
-			<Traits chanceToBlindFire="0.5" stopsToShoot="false" />
+			<Traits chanceToBlindFire="0.5" stopsToShoot="false" roamAround="true"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -565,7 +590,7 @@
 
 			<Equipment>
 				<Item name="Mini Uzi Folded" />
-				<!-- Removed for clarity Item name="Bodyguard SoftArmor" /-->
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -581,7 +606,7 @@
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
 			<Id name="Private Security" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
-			<Traits chanceToBlindFire="0.0" stopsToShoot="true" />
+			<Traits chanceToBlindFire="0.0" stopsToShoot="true" roamAround="true"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -589,7 +614,7 @@
 
 			<Equipment>
 				<Item name="AKS 74U"/> 
-				<!-- Removed for clarity Item name="Bodyguard SoftArmor" /-->
+				<Item name="Human Variables"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -604,7 +629,7 @@
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
 			<Id name="Private Security" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
-			<Traits chanceToBlindFire="0.0" stopsToShoot="true" />
+			<Traits chanceToBlindFire="0.0" stopsToShoot="true" roamAround="true"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -650,7 +675,7 @@
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="25.0"/>
 			<Id name="Security QRF" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
-			<Traits chanceToBlindFire="0.0" stopsToShoot="false" />
+			<Traits chanceToBlindFire="0.0" stopsToShoot="false" roamAround="true"/>
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
