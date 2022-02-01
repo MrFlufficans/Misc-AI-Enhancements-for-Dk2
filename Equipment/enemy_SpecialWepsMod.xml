@@ -1,6 +1,5 @@
 <!--Human "Variables"
 enemies are now much more RNG on health-->
-<!--Note for Later: DO NOTE RELEASE WITHOUT PROPER TESTING!-->
 <Equipment>
 	<Armor name="Human Variables" inventoryBinding="Armor" unlockCost="0"
 		>
