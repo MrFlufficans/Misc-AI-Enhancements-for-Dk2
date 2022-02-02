@@ -475,19 +475,4 @@
 			critChanceAdd="-10"
 		/>
 	</AttackType>
-	<!--For Later!!!-->
-	
-	<AttackType name="Nil">
-		<ModifiableParams
-			minAimTime="0"
-			maxAimTime="0"
-			roundsPerSecondOverride="0"
-			minShots="0"
-			maxShots="0"
-			resetTime="0"
-			accuracyAdd="0"
-			followupShotAccuracyAdd="0"
-			critChanceAdd="0"
-		/>
-	</AttackType>
 </FirearmAttackTypes>
