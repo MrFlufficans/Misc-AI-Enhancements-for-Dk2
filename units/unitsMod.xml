@@ -2,13 +2,13 @@
    <Unit
         name="[DataExpunged]"
 		nameUI="REDACTED"
-		description="@unit_WhoAreThey_Desc"
+		description="Wait, who even are they?"
 		flagTex="data/textures/gui/squads/rangers_bg_01.dds"
 		rndNameEntry="@#squadnamerangers">
 
 		<Classes>
 			<Class name="FireteamLead" 	numSlots="8" iconTex="data/textures/gui/deploy/class_icon_support.dds"/>
-			<Class name="Rifleman" 	numSlots="4" iconTex=""/>
+			<Class name="Rifleman" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
 			<Class name="DesignatedMarksman"	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_marksman.dds"/>
 			<Class name="AutoRifleman" numSlots="4" iconTex="data/textures/gui/deploy/class_icon_grenadier.dds"/>
 		</Classes>
@@ -45,5 +45,4 @@
 			<Rank xpNeeded="156420" badgeTex=""/>
 		</Ranks>
 	</Unit>
-   />
 </Units>
