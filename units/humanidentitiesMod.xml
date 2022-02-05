@@ -1,2 +1,6 @@
 <HumanIdentities>
+    <Portrait tex="data/textures/portraits/cia1.dds" unit="REDACTED" gender="0" voicePack="male_very_american"/>
+    <Portrait tex="data/textures/portraits/cia2.dds" unit="REDACTED" gender="0" voicePack="male_very_american"/>
+    <Portrait tex="data/textures/portraits/cia3.dds" unit="REDACTED" gender="0" voicePack="male_very_american"/>
+    <Portrait tex="data/textures/portraits/cia4.dds" unit="REDACTED" gender="0" voicePack="male_very_american"/>
 </HumanIdentities>

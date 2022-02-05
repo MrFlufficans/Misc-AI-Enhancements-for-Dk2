@@ -1,7 +1,7 @@
 <Units>
    <Unit
-        name="[DataExpunged]"
-		nameUI="REDACTED"
+        name="REDACTED"
+		nameUI="[DataExpunged]"
 		description="Wait, who even are they?"
 		flagTex="data/textures/gui/squads/rangers_bg_01.dds"
 		rndNameEntry="@#squadnamerangers">
