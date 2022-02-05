@@ -31,7 +31,7 @@
 	<Behavior name="Normal Combat" 			inherit="Normal Guy">
 		<Bind evt="IDLE_TICK" 				prio="0" activity="IDLE_COMBAT"/>
 		<Bind evt="CMD_PATROL" 				prio="1" activity="IDLE_COMBAT"/>
-		<Bind evt="SEE_DEAD_FRIENDLY" 		prio="3" activity="IDLE_COMBAT"/>
+		<Bind evt="SEE_DEAD_FRIENDLY" 		prio="3" activity="INVESTIGATE"/>
 		<Bind evt="CMD_RUN_TO" 				prio="5" activity="IDLE_COMBAT"/>
 		<Bind evt="CMD_SUPPRESS_FIRE" 		prio="6" activity="ENGAGE_ENEMY"/>
 		<Bind evt="SEE_DOOR_OPEN" 			prio="7" activity="INVESTIGATE"/>
