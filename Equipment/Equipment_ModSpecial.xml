@@ -28,7 +28,8 @@
 
 <!--Equipment; P0: Firearms-->
 
-<!--Marksmen, Autoriflemen Weaponry-->
+<!--Marksmen, Autoriflemen Weaponry: "Support" Weaponry
+Fireteam Lead, Rifleman Weaponry: "Assault" Weaponry-->
 <!--SMGs_Supporters -->
 	<Firearm name="MP5C" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="4"
 			tooltip="@firearm_mp5a_name"
