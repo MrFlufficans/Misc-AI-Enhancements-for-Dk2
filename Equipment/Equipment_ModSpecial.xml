@@ -193,15 +193,15 @@ Fireteam Lead, Rifleman Weaponry: "Assault" Weaponry-->
 	</Firearm>
 <!--SMG's_Support_End-->
 <!--Rifles_Support-->
-	<Firearm name="M4 Carbine" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
+	<Firearm name="M4SupportC" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="4"
 			tooltip="@firearm_m4_carabine_name"
 			description="@firearm_m4_carabine_desc"
 			img="data/models/weapons/m4_ui.dds"
 
 			animationSet="rifle"
 		>
-		<ClassBinding name="Assault"/>
-		<ClassBinding name="Medic"/>
+		<ClassBinding name="AutoRifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/m4.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m4.dds"/>
 
@@ -229,7 +229,7 @@ Fireteam Lead, Rifleman Weaponry: "Assault" Weaponry-->
 			operationInfoText="@firearm_operation_semifull_name"
 			ejectingShellEntity="BulletCasingLarge"
 			magazineEntity="m4_mag"
-			suppressedSwitch="M4Sup"
+			suppressedSwitch="M4SupC"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="40.0"
 			ai_rangeMax="100.0"
@@ -278,15 +278,15 @@ Fireteam Lead, Rifleman Weaponry: "Assault" Weaponry-->
 		</Sounds>
 	</Firearm>
 
-	<Firearm name="M4Sup" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
+	<Firearm name="M4SupportSD" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
 			tooltip="@firearm_m4Sup_carabine_name"
 			description="@firearm_m4Sup_carabine_desc"
 			img="data/models/weapons/m4_ui.dds"
 
 			animationSet="rifle"
 		>
-		<ClassBinding name="Assault"/>
-		<ClassBinding name="Medic"/>
+		<ClassBinding name="AutoRifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/m4.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m4.dds"/>
 		<RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
@@ -371,8 +371,8 @@ Fireteam Lead, Rifleman Weaponry: "Assault" Weaponry-->
 
 			animationSet="rifle"
 		>
-		<ClassBinding name="Assault"/>
-		<ClassBinding name="Medic"/>
+		<ClassBinding name="AutoRifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/mk18.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mk18.dds"/>
 
@@ -407,10 +407,8 @@ Fireteam Lead, Rifleman Weaponry: "Assault" Weaponry-->
 			ai_stopWhenShooting="false"
 			hasLaser="true"
 		/>
-
-		<!-- defines base ROF, accuracy and sound of weapon -->
 		<AmmoTypes>
-			<Ammo name="556FMJM855_MK18"/> <!-- first one is default, the others can be customized -->
+			<Ammo name="556FMJM855_MK18"/> 
 			<Ammo name="556FMJM855A1_MK18"/>
 			<Ammo name="556FMJMk318_MK18"/>
 		</AmmoTypes>
@@ -439,7 +437,7 @@ Fireteam Lead, Rifleman Weaponry: "Assault" Weaponry-->
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
 		</MuzzleFlash>
 
-		<Sounds> <!-- max 4 variants for each action -->
+		<Sounds> 
 			<Equip name="rifle_eqp"/>
 			<Unequip name="rifle_neqp"/>
 			<Reload name="rifle_reld"/>
@@ -494,10 +492,8 @@ Fireteam Lead, Rifleman Weaponry: "Assault" Weaponry-->
 			ai_stopWhenShooting="false"
 			hasLaser="true"
 		/>
-
-		<!-- defines base ROF, accuracy and sound of weapon -->
 		<AmmoTypes>
-			<Ammo name="556FMJM855_MK18Sup"/> <!-- first one is default, the others can be customized -->
+			<Ammo name="556FMJM855_MK18Sup"/> 
 			<Ammo name="556FMJM855A1_MK18Sup"/>
 			<Ammo name="556FMJMk318_MK18Sup"/>
 		</AmmoTypes>
@@ -536,8 +532,10 @@ Fireteam Lead, Rifleman Weaponry: "Assault" Weaponry-->
 			<Empty name="gen_empty"/>
 		</Sounds>
 	</Firearm>
-
 <!--Support_Rifles_End-->
+<!--Support_Weaponry_End-->
+<!--AssaultWeaponry_Start-->
+
 <!--Equipment; P1:Throwables-->
 
 <!--Equipment; P2: Gear-->
