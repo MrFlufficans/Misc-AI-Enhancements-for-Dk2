@@ -33,15 +33,15 @@
 <!-- SMGs -->
 
 <!--Support Weaponry-->
-	<Firearm name="MP5" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
+	<Firearm name="MP5C" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="4"
 			tooltip="@firearm_mp5a_name"
 			description="@firearm_mp5a_desc"
 			img="data/models/weapons/mp5a3_ui.dds"
 
 			animationSet="rifle"
 		>
-		<ClassBinding name="Assault"/>
-		<ClassBinding name="Medic"/>
+		<ClassBinding name="AutoRifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/mp5a3.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mp5a3.dds"/>
 

@@ -7,10 +7,10 @@
 		rndNameEntry="@#squadnamerangers">
 
 		<Classes>
-			<Class name="FireteamLead" 	numSlots="8" iconTex="data/textures/gui/deploy/class_icon_support.dds"/>
-			<Class name="Rifleman" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
-			<Class name="DesignatedMarksman"	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_marksman.dds"/>
-			<Class name="AutoRifleman" numSlots="4" iconTex="data/textures/gui/deploy/class_icon_grenadier.dds"/>
+			<Class name="FireteamLead" 	numSlots="1" iconTex="data/textures/gui/deploy/class_icon_support.dds"/>
+			<Class name="Rifleman" 	numSlots="1" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="DesignatedMarksman"	numSlots="1" iconTex="data/textures/gui/deploy/class_icon_marksman.dds"/>
+			<Class name="AutoRifleman" numSlots="1" iconTex="data/textures/gui/deploy/class_icon_grenadier.dds"/>
 		</Classes>
 
 		<TrooperRanks>
