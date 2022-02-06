@@ -199,6 +199,8 @@
 <!--SMG's end-->
 
 <!--Rifles-->
+
+
 <!--Support Secondaries-->
 	<Firearm name="M4SupportC" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="4"
 			tooltip="@firearm_m4_carabine_name"
@@ -539,11 +541,11 @@
 			<Empty name="gen_empty"/>
 		</Sounds>
 	</Firearm>
-
-
-
+<!--Support Secondaries End-->
 <!--Assault Weapons-->
 
+<!--Assaulter Weapons End -->
+<!--Firearms End-->
 <!--Equipment; P1:Throwables-->
 
 <!--Equipment; P2: Gear-->
