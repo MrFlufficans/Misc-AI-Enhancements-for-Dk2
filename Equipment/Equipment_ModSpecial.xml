@@ -1,4 +1,16 @@
 <Equipment>
+
+<!--Bad Guys-->
+
+<!--Equipment; P0: Firearms-->
+
+<!--Equipment; P1:Throwables-->
+
+<!--Equipment; P2: Gear-->
+
+<!--Equipment; P3: Helmets + NVG's-->
+
+<!--Equipment; P4: Vests-->
 	<Armor name="Human Variables" inventoryBinding="Armor" unlockCost="0"
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="0"/>
@@ -9,7 +21,23 @@
 		</Params>
 	</Armor>
 
+<!--Equipment; P5: Misc-->
+
+<!--Bad Guys End-->
+<!--Good Guys-->
+
+<!--Equipment; P0: Firearms-->
 
 
-<!--GoodGuys-->
+<!--Equipment; P1:Throwables-->
+
+<!--Equipment; P2: Gear-->
+
+<!--Equipment; P3: Helmets + NVG's-->
+
+<!--Equipment; P4: Vests-->
+
+<!--Equipment; P5: Misc-->
+
+<!--Good Guys End-->
 </Equipment>
