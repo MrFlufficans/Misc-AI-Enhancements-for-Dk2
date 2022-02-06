@@ -27,10 +27,12 @@
 <!--Good Guys-->
 
 <!--Equipment; P0: Firearms-->
+
 <!--SMG's-->
 
+<!--AssaultSMG-->
 
-<!--Primaries-->
+<!--AssaultSMGend-->
 <!--Support Secondaries-->
 	<Firearm name="MP5C" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="4"
 			tooltip="@firearm_mp5a_name"
@@ -192,10 +194,7 @@
 			<Empty name="gen_empty"/>
 		</Sounds>
 	</Firearm>
-
 <!--Secondaries End-->
-<!--Assault SMG's-->
-
 <!--SMG's end-->
 
 <!--Rifles-->
