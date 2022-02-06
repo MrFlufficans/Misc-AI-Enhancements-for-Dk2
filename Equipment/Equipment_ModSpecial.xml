@@ -34,7 +34,7 @@
 
 <!--AssaultSMGend-->
 <!--Support Secondaries-->
-	<Firearm name="MP5C" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="4"
+	<Firearm name="MP5SC" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="4"
 			tooltip="@firearm_mp5a_name"
 			description="@firearm_mp5a_desc"
 			img="data/models/weapons/mp5a3_ui.dds"
@@ -114,7 +114,7 @@
 		</Sounds>
 	</Firearm>
 
-	<Firearm name="MP5SDC" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="6"
+	<Firearm name="MP5SDSC" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="6"
 			tooltip="@firearm_mp5sd_name"
 			description="@firearm_mp5sd_desc"
 			img="data/models/weapons/mp5sd3_ui.dds"
@@ -199,9 +199,8 @@
 
 <!--Rifles-->
 
-
 <!--Support Secondaries-->
-	<Firearm name="M4SupportC" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="4"
+	<Firearm name="M4SC" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="4"
 			tooltip="@firearm_m4_carabine_name"
 			description="@firearm_m4_carabine_desc"
 			img="data/models/weapons/m4_ui.dds"
@@ -237,7 +236,7 @@
 			operationInfoText="@firearm_operation_semifull_name"
 			ejectingShellEntity="BulletCasingLarge"
 			magazineEntity="m4_mag"
-			suppressedSwitch="M4SupC"
+			suppressedSwitch="M4CSD"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="40.0"
 			ai_rangeMax="100.0"
@@ -286,7 +285,7 @@
 		</Sounds>
 	</Firearm>
 
-	<Firearm name="M4SupportSD" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
+	<Firearm name="M4CSD" inventoryBinding="SecondaryWeaponMuzzle" category="rifle" unlockCost="2"
 			tooltip="@firearm_m4Sup_carabine_name"
 			description="@firearm_m4Sup_carabine_desc"
 			img="data/models/weapons/m4_ui.dds"
@@ -372,7 +371,7 @@
 		</Sounds>
 	</Firearm>
 
-	<Firearm name="MK 18" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
+	<Firearm name="MK18SC" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="6"
 			tooltip="@firearm_mk18_name"
 			description="@firearm_mkl8_desc"
 			img="data/models/weapons/mk18_ui.dds"
@@ -456,7 +455,7 @@
 		</Sounds>
 	</Firearm>
 
-	<Firearm name="MK 18Sup" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
+	<Firearm name="MK18SCSD" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
 			tooltip="@firearm_mk18Sup_name"
 			description="@firearm_mk18Sup_desc"
 			img="data/models/weapons/mk18_ui.dds"
