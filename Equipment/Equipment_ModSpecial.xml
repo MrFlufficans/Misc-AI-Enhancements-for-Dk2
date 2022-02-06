@@ -29,6 +29,8 @@
 <!--Equipment; P0: Firearms-->
 <!--SMG's-->
 
+
+<!--Primaries-->
 <!--Support Secondaries-->
 	<Firearm name="MP5C" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="4"
 			tooltip="@firearm_mp5a_name"
@@ -190,10 +192,13 @@
 			<Empty name="gen_empty"/>
 		</Sounds>
 	</Firearm>
+
+<!--Secondaries End-->
+<!--Assault SMG's-->
+
 <!--SMG's end-->
 
 <!--Rifles-->
-
 <!--Support Secondaries-->
 	<Firearm name="M4SupportC" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="4"
 			tooltip="@firearm_m4_carabine_name"
@@ -524,7 +529,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
 		</MuzzleFlash>
 
-		<Sounds> <!-- max 4 variants for each action -->
+		<Sounds> 
 			<Equip name="rifle_eqp"/>
 			<Unequip name="rifle_neqp"/>
 			<Reload name="rifle_reld"/>
@@ -534,9 +539,10 @@
 			<Empty name="gen_empty"/>
 		</Sounds>
 	</Firearm>
-<!--Support_Rifles_End-->
-<!--Support_Weaponry_End-->
-<!--AssaultWeaponry_Start-->
+
+
+
+<!--Assault Weapons-->
 
 <!--Equipment; P1:Throwables-->
 
