@@ -27,10 +27,9 @@
 <!--Good Guys-->
 
 <!--Equipment; P0: Firearms-->
+<!--SMG's-->
 
-<!--Marksmen, Autoriflemen Weaponry: "Support" Weaponry
-Fireteam Lead, Rifleman Weaponry: "Assault" Weaponry-->
-<!--SMGs_Supporters -->
+<!--Support Secondaries-->
 	<Firearm name="MP5C" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="4"
 			tooltip="@firearm_mp5a_name"
 			description="@firearm_mp5a_desc"
@@ -191,8 +190,11 @@ Fireteam Lead, Rifleman Weaponry: "Assault" Weaponry-->
 			<Empty name="gen_empty"/>
 		</Sounds>
 	</Firearm>
-<!--SMG's_Support_End-->
-<!--Rifles_Support-->
+<!--SMG's end-->
+
+<!--Rifles-->
+
+<!--Support Secondaries-->
 	<Firearm name="M4SupportC" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="4"
 			tooltip="@firearm_m4_carabine_name"
 			description="@firearm_m4_carabine_desc"
