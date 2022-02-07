@@ -3784,8 +3784,9 @@
 		</Projectile>
 	</Grenade>
 <!--Lethal end-->
-<!--Throwables end-->
 
+
+<!--Throwables end-->
 <!--Equipment; P2: Gear-->
 
 <!--Gear end-->
@@ -3794,8 +3795,103 @@
 <!--Equipment; P3: Helmets + NVG's-->
 
 <!--Equipment; P4: Vests-->
+	<Armor name="ClassifiedLVL3" inventoryBinding="Armor" unlockCost="0"
+			tooltip="@armor_rangers_basicvest_name"
+			description="@armor_rangers_basicvest_desc"
+			img="data/models/equipment/armor_basic_ui.dds"
+			img_tooltip="data/models/equipment/armor_02_ui_ttip.tga"
+		>
+		<ClassBinding name="FireteamLead"/>
+		<ClassBinding name="Rifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
+		<ClassBinding name="AutoRifleman"/>
+		<MobilityModifiers moveSpeedModifierPercent="-8" turnSpeedModifierPercent="0"/>
 
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="90" coveragePercent="40" piercingProtectionLevel="5"/>
+			<ProtectionArc degrees="270" coveragePercent="20" piercingProtectionLevel="4"/>
+			<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="5"/>
+		</Params>
+	</Armor>
 
+	<Armor name="EXTENDEDClassified" inventoryBinding="Armor" unlockCost="4"
+			tooltip="@armor_rangers_extended_name"
+			description="@armor_rangers_extended_desc"
+			img="data/models/equipment/armor_extended_ui.dds"
+			img_tooltip="data/models/equipment/armor_03_ui_ttip.tga"
+		>
+		<ClassBinding name="FireteamLead"/>
+		<ClassBinding name="Rifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
+		<ClassBinding name="AutoRifleman"/>
+		<MobilityModifiers moveSpeedModifierPercent="-16" turnSpeedModifierPercent="-10"/>
+
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="90" coveragePercent="65" piercingProtectionLevel="5"/>
+			<ProtectionArc degrees="270" coveragePercent="35" piercingProtectionLevel="5"/>
+			<ProtectionArc degrees="360" coveragePercent="45" piercingProtectionLevel="5"/>
+		</Params>
+	</Armor>
+
+	<Armor name="LVL4Classified" inventoryBinding="Armor" unlockCost="3"
+			tooltip="@armor_rangers_levelIVsides_name"
+			description="@armor_rangers_levelIVsides_desc"
+			img="data/models/equipment/armor_tacvestiv_ui.dds"
+			img_tooltip="data/models/equipment/armor_02_ui_ttip.tga"
+		>
+		<ClassBinding name="FireteamLead"/>
+		<ClassBinding name="Rifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
+		<ClassBinding name="AutoRifleman"/>
+		<MobilityModifiers moveSpeedModifierPercent="-13" turnSpeedModifierPercent="-4"/>
+
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="90" coveragePercent="40" piercingProtectionLevel="6"/>
+			<ProtectionArc degrees="270" coveragePercent="30" piercingProtectionLevel="6"/>
+			<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="6"/>
+		</Params>
+	</Armor>
+
+	<Armor name="CLASSIFIED Jumpable" inventoryBinding="Armor" unlockCost="4"
+			tooltip="@armor_rangers_jumpable_name"
+			description="@armor_rangers_jumpable_desc"
+			img="data/models/equipment/armor_jumpable_ui.dds"
+			img_tooltip="data/models/equipment/armor_01_ui_ttip.tga"
+		>
+		<ClassBinding name="FireteamLead"/>
+		<ClassBinding name="Rifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
+		<ClassBinding name="AutoRifleman"/>
+		<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="+1"/>
+		<ConcealmentModifier add="-3" />
+
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="90" coveragePercent="40" piercingProtectionLevel="5"/>
+			<ProtectionArc degrees="270" coveragePercent="0" piercingProtectionLevel="0"/>
+			<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="5"/>
+		</Params>
+	</Armor>
+
+	<Armor name="CLASSIFIED Jumpable Swimmer" inventoryBinding="Armor" unlockCost="4"
+			tooltip="@armor_rangers_jump_swimmeriv_name"
+			description="@armor_rangers_jump_swimmeriv_desc"
+			img="data/models/equipment/armor_jump_swimmeriv_ui.dds"
+			img_tooltip="data/models/equipment/armor_01_ui_ttip.tga"
+		>
+		<ClassBinding name="FireteamLead"/>
+		<ClassBinding name="Rifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
+		<ClassBinding name="AutoRifleman"/>
+
+		<MobilityModifiers moveSpeedModifierPercent="-7" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-3" />
+
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="86" coveragePercent="38" piercingProtectionLevel="6"/>
+			<ProtectionArc degrees="270" coveragePercent="0" piercingProtectionLevel="0"/>
+			<ProtectionArc degrees="360" coveragePercent="38" piercingProtectionLevel="6"/>
+		</Params>
+	</Armor>
 <!--Vests end-->
 
 <!--Equipment; P5: Misc-->

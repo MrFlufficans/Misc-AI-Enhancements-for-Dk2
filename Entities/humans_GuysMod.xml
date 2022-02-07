@@ -8,8 +8,8 @@
 		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>		
 		<PhysicalParams health="100"/>
 		<Human type="GoodGuy"
-			unit="Rangers"
-			class="Assault">
+			unit="REDACTED"
+			class="FireteamLead">
 
 			<Id name="Ranger Assaulter" portrait="data/textures/portraits/ranger2.dds" gender="0" voicePack="male_very_american"/>
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
@@ -43,8 +43,8 @@
 		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>		
 		<PhysicalParams health="100"/>
 		<Human type="GoodGuy"
-			unit="Rangers"
-			class="Assault">
+			unit="REDACTED"
+			class="Rifleman">
 
 			<Id name="Ranger Assaulter" portrait="data/textures/portraits/ranger2.dds" gender="0" voicePack="male_very_american"/>
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
@@ -70,7 +70,7 @@
 	</Entity>
 
 
-	<Entity name="DesignatedMarksman" type="Human" editorAutoHeight="false">
+	<Entity name="DesignateMarksman" type="Human" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/Unit_Tex.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_vest.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_helmet.dds" attachSlot="Bip001 Head">
@@ -79,8 +79,8 @@
 		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>		
 		<PhysicalParams health="100"/>
 		<Human type="GoodGuy"
-			unit="Rangers"
-			class="Assault">
+			unit="REDACTED"
+			class="DesignatedMarksman">
 
 			<Id name="Ranger Assaulter" portrait="data/textures/portraits/ranger2.dds" gender="0" voicePack="male_very_american"/>
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
@@ -115,8 +115,8 @@
 		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>		
 		<PhysicalParams health="100"/>
 		<Human type="GoodGuy"
-			unit="Rangers"
-			class="Assault">
+			unit="REDACTED"
+			class="AutoRifleman">
 
 			<Id name="Ranger Assaulter" portrait="data/textures/portraits/ranger2.dds" gender="0" voicePack="male_very_american"/>
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
