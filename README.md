@@ -3,7 +3,7 @@
 Thanks to:
 
 
-Fluffy - Installer + Whitespace and formatting help
+Fluffy - Installer + Whitespace, GUI and formatting help
 
 
 Mich - Texturing Assistance
