@@ -3571,7 +3571,7 @@
 	</Grenade>
 
 	
-	<Grenade name="Stinger" inventoryBinding="UtilityPouch"
+	<Grenade name="StingerC" inventoryBinding="UtilityPouch"
 			quantity="2"
 
 			tooltip="@grenade_stinger_name"
@@ -3711,7 +3711,7 @@
 		</Projectile>
 	</Grenade>
 
-	<Grenade name="Frag Grenade Kit" inventoryBinding="SupportGear1"
+	<Grenade name="FragGrenadeKitC" inventoryBinding="SupportGear1"
 			quantity="3"
 
 			tooltip="@grenade_frag_kit_name"
