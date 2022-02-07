@@ -1799,7 +1799,6 @@
 <!--Assaulter Rifles End -->
 
 <!--LMG's-->
-
 	<Firearm name="M249C" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
 			tooltip="@firearm_m249spw_name"
 			description="@firearm_m249spw_desc"
@@ -2323,6 +2322,8 @@
 		</Sounds>
 	</Firearm>
 <!--LMG's End-->
+
+
 <!--Marksman Rifles-->
 	<Firearm name="MK17LBC" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
 			tooltip="@firearm_mk17_lb_name"
@@ -3309,13 +3310,493 @@
 
 <!--Firearms End-->
 
+
 <!--Equipment; P1:Throwables-->
+<!--Non lethal-->
+	<Grenade name="SmokeGrenadeC" inventoryBinding="UtilityPouch"
+			quantity="2"
+
+			tooltip="@grenade_smoke_name"
+			description="@grenade_smoke_desc"
+			img="data/models/equipment/smoke_grenade_ui.dds"
+			img_tooltip="data/models/equipment/smoke_grenade_ui_ttip.tga"
+			movie="data/movies/smoke_grenade.ogv"
+
+			animationSet="grenade"
+			soundUse="grenade_use"
+		>
+		<ClassBinding name="FireteamLead"/>
+		<ClassBinding name="Rifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
+		<ClassBinding name="AutoRifleman"/>
+		<RenderObject3D model="data/models/equipment/smoke_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/smoke_grenade.dds"/>
+		<ConcealmentModifier add="-1"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
+
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="1000"
+			throwTimeCorner="1400"
+		/>
+
+		<Projectile
+			bodyTemplate="SmokeGrenade"
+			trailParticles="SmokeGrenadeTrail"
+			pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+
+			soundExplosion=""
+			soundOnSpawn="smoke_throw"
+			soundFollow="smoke_loop"
+			soundHitFloor="grenade_hit_floor"
+			soundVoiceOnLaunch="VOX_TRPR_GEAR_SMOKE"
+
+			friendlyFire="false"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="200"
+
+			physicsDetonationForce="5"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="10">
+
+			<FX
+				particles="SmokeGrenadeExplosion"
+				anim2D="">
+			</FX>
+
+			<EffectRange radiusMeters="2.5">
+				<SmokeEffect durationMSec="14300" />
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+
+	<Grenade name="SmokeGrenadeKitC" inventoryBinding="SupportGear1"
+			quantity="3"
+
+			tooltip="@grenade_smoke_kit_name"
+			description="@grenade_smoke_desc"
+			img="data/models/equipment/smoke_grenade_kit_ui.dds"
+			img_tooltip="data/models/equipment/smoke_grenade_ui_ttip.tga"
+			movie="data/movies/smoke_grenade.ogv"
+
+			animationSet="grenade"
+			soundUse="grenade_use"
+		>
+		<ClassBinding name="FireteamLead"/>
+		<ClassBinding name="Rifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
+		<ClassBinding name="AutoRifleman"/>
+		<RenderObject3D model="data/models/equipment/smoke_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/smoke_grenade.dds"/>
+		<ConcealmentModifier add="-2"/>
+		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+
+
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="1000"
+			throwTimeCorner="1400"
+		/>
+
+		<Projectile
+			bodyTemplate="SmokeGrenade"
+			trailParticles="SmokeGrenadeTrail"
+			pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+
+			soundExplosion=""
+			soundOnSpawn="smoke_throw"
+			soundFollow="smoke_loop"
+			soundHitFloor="grenade_hit_floor"
+			soundVoiceOnLaunch="VOX_TRPR_GEAR_SMOKE"
+
+			friendlyFire="false"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="200"
+
+			physicsDetonationForce="5"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="10">
+
+			<FX
+				particles="SmokeGrenadeExplosion"
+				anim2D="">
+			</FX>
+
+			<EffectRange radiusMeters="2.5">
+				<SmokeEffect durationMSec="14300" />
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+	
+	<Grenade name="FlashbangC" inventoryBinding="UtilityPouch"
+			quantity="2"
+
+			tooltip="@grenade_flashbang_name"
+			description="@grenade_flashbang_desc"
+			img="data/models/equipment/flashbang_ui.dds"
+			img_tooltip="data/models/equipment/flashbang_ui_ttip.tga"
+			movie="data/movies/flashbang.ogv"
+
+			animationSet="grenade"
+			soundUse="grenade_use"
+		>
+		<ClassBinding name="FireteamLead"/>
+		<ClassBinding name="Rifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
+		<ClassBinding name="AutoRifleman"/>
+		<RenderObject3D model="data/models/equipment/flashbang.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/flashbang.dds"/>
+		<ConcealmentModifier add="-1"/>
+		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
+
+		<!--
+		- throwTime is the full time required to throw it, it is split in half between when the hand starts moving and the grenade launches and the recovery
+		- the effectRange Radius contains the previous one, but the effects do not concatenate
+		- explosion time is adjusted automatically depending on the distance to target, but have a minimum explosion time
+		-->
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="1000"
+			throwTimeCorner="1400"
+		/>
+
+		<Projectile
+			bodyTemplate="FlashbangGrenade"
+			pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+
+			soundExplosion="flash_expl"
+			soundHitFloor="grenade_hit_floor"
+			soundVoiceOnLaunch="VOX_TRPR_GEAR_FLASH"
+
+			friendlyFire="false"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="200"
+
+			physicsDetonationForce="30"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="25">
+
+			<!-- burn marks are randomly rotated/scaled for diversity -->
+			<FX
+				particles="Flashbang"
+				entity1="ExplosionLight"
+				entity2="explosion_mark"
+				randRotation2="true"
+				entity3="FX_dust_small"
+				anim2D="">
+			</FX>
+
+			<EffectRange radiusMeters="2">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="3500"/>
+				<DamageEffect chancePercent="100" damage="1" damageType="1"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+
+			<EffectRange radiusMeters="3.5">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="1750"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+
+	<Grenade name="FlashbangKitC" inventoryBinding="SupportGear1"
+			quantity="3"
+
+			tooltip="@grenade_flashbang_kit_name"
+			description="@grenade_flashbang_desc"
+			img="data/models/equipment/flashbang_kit_ui.dds"
+			img_tooltip="data/models/equipment/flashbang_ui_ttip.tga"
+			movie="data/movies/flashbang.ogv"
+
+			animationSet="grenade"
+			soundUse="grenade_use"
+		>
+		<ClassBinding name="FireteamLead"/>
+		<ClassBinding name="Rifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
+		<ClassBinding name="AutoRifleman"/>
+		<RenderObject3D model="data/models/equipment/flashbang.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/flashbang.dds"/>
+		<ConcealmentModifier add="-2"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
+
+		<!--
+		- throwTime is the full time required to throw it, it is split in half between when the hand starts moving and the grenade launches and the recovery
+		- the effectRange Radius contains the previous one, but the effects do not concatenate
+		- explosion time is adjusted automatically depending on the distance to target, but have a minimum explosion time
+		-->
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="1000"
+			throwTimeCorner="1400"
+		/>
+
+		<Projectile
+			bodyTemplate="FlashbangGrenade"
+			pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+
+			soundExplosion="flash_expl"
+			soundHitFloor="grenade_hit_floor"
+			soundVoiceOnLaunch="VOX_TRPR_GEAR_FLASH"
+
+			friendlyFire="false"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="200"
+
+			physicsDetonationForce="30"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="25">
+
+			<!-- burn marks are randomly rotated/scaled for diversity -->
+			<FX
+				particles="Flashbang"
+				entity1="ExplosionLight"
+				entity2="explosion_mark"
+				randRotation2="true"
+				entity3="FX_dust_small"
+				anim2D="">
+			</FX>
+
+			<EffectRange radiusMeters="2">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="3500"/>
+				<DamageEffect chancePercent="100" damage="1" damageType="1"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+
+			<EffectRange radiusMeters="3.5">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="1750"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+
+	
+	<Grenade name="Stinger" inventoryBinding="UtilityPouch"
+			quantity="2"
+
+			tooltip="@grenade_stinger_name"
+			description="@grenade_stinger_desc"
+			img="data/models/equipment/stinger_ui.dds"
+			img_tooltip="data/models/equipment/stinger_ui_ttip.tga"
+			movie="data/movies/stinger.ogv"
+
+			animationSet="grenade"
+			soundUse="grenade_use"
+		>
+		<ClassBinding name="FireteamLead"/>
+		<ClassBinding name="Rifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
+		<ClassBinding name="AutoRifleman"/>
+		<RenderObject3D model="data/models/equipment/frag_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/stinger.dds"/>
+		<ConcealmentModifier add="-1"/>
+		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
+
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="1000"
+			throwTimeCorner="1400"
+		/>
+
+		<Projectile
+			bodyTemplate="StingerGrenade"
+			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
+
+			soundExplosion="frag_expl"
+			soundHitFloor="grenade_hit_floor"
+			soundVoiceOnLaunch="VOX_TRPR_GEAR_STINGER"
+
+			friendlyFire="true"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="1000"
+
+			physicsDetonationForce="40"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="20">
+
+			<FX
+				particles="Stinger"
+				entity1="ExplosionLight"
+				entity2="explosion_mark"
+				randRotation2="true"
+				entity3="FX_dust_small"
+				anim2D="">
+			</FX>
+
+			<EffectRange radiusMeters="1">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
+				<DamageEffect chancePercent="100" damage="1" damageType="1"/>
+			</EffectRange>
+
+			<EffectRange radiusMeters="5">
+				<ScatterEffect chancePercent="100"/>
+				<StunEffect chancePercent="100" innerRangeTimeMSec="250" outerRangeTimeMSec="250"/>
+				<SuppressEffect amount="30"/>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+<!--Non lethal end-->
+
+<!--Lethal-->
+	<Grenade name="FragGrenadeC" inventoryBinding="UtilityPouch"
+			quantity="2"
+
+			tooltip="@grenade_frag_name"
+			description="@grenade_frag_desc"
+			img="data/models/equipment/frag_grenade_ui.dds"
+			img_tooltip="data/models/equipment/frag_grenade_ui_ttip.tga"
+			movie="data/movies/frag.ogv"
+
+			animationSet="grenade"
+			soundUse="grenade_use"
+		>
+		<ClassBinding name="FireteamLead"/>
+		<ClassBinding name="Rifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
+		<ClassBinding name="AutoRifleman"/>
+		<RenderObject3D model="data/models/equipment/frag_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/frag_grenade.dds"/>
+		<ConcealmentModifier add="-1"/>
+		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
+
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="1000"
+			throwTimeCorner="1400"
+		/>
+
+		<Projectile
+			bodyTemplate="FragGrenade"
+			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
+
+			soundExplosion="frag_expl"
+			soundHitFloor="grenade_hit_floor"
+			soundVoiceOnLaunch="VOX_TRPR_GEAR_FRAG"
+
+			friendlyFire="true"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="1000"
+
+			physicsDetonationForce="60"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="30">
+			<FX
+				particles="FragGrenade"
+				entity1="ExplosionLight"
+				entity2="explosion_mark"
+				randRotation2="true"
+				entity3="FX_dust_small"
+				anim2D="">
+			</FX>
+
+			<EffectRange radiusMeters="1.7">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
+				<DamageEffect chancePercent="100" damage="100" damageType="1"  armorPenetration="0"/>
+				<ScatterEffect chancePercent="100" armorPenetration="3"/>
+				<SuppressEffect amount="20"/>
+				<SmokeEffect durationMSec="1030" />
+			</EffectRange>
+			<EffectRange radiusMeters="2.0">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
+				<DamageEffect chancePercent="100" damage="100" damageType="1"/>
+				<ScatterEffect chancePercent="100" armorPenetration="3"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+			<EffectRange radiusMeters="4.2">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="800" outerRangeTimeMSec="500"/>
+				<DamageEffect chancePercent="50" damage="20" damageType="1"/>
+				<ScatterEffect chancePercent="100" armorPenetration="0"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+
+	<Grenade name="Frag Grenade Kit" inventoryBinding="SupportGear1"
+			quantity="3"
+
+			tooltip="@grenade_frag_kit_name"
+			description="@grenade_frag_desc"
+			img="data/models/equipment/frag_grenade_kit_ui.dds"
+			img_tooltip="data/models/equipment/frag_grenade_ui_ttip.tga"
+			movie="data/movies/frag.ogv"
+
+			animationSet="grenade"
+			soundUse="grenade_use"
+		>
+		<ClassBinding name="FireteamLead"/>
+		<ClassBinding name="Rifleman"/>
+		<ClassBinding name="DesignatedMarksman"/>
+		<ClassBinding name="AutoRifleman"/>
+		<RenderObject3D model="data/models/equipment/frag_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/frag_grenade.dds"/>
+		<ConcealmentModifier add="-2"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
+
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="1000"
+			throwTimeCorner="1400"
+		/>
+
+		<Projectile
+			bodyTemplate="FragGrenade"
+			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
+
+			soundExplosion="frag_expl"
+			soundHitFloor="grenade_hit_floor"
+			soundVoiceOnLaunch="VOX_TRPR_GEAR_FRAG"
+
+			friendlyFire="true"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="1000"
+
+			physicsDetonationForce="60"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="30">
+			<FX
+				particles="FragGrenade"
+				entity1="ExplosionLight"
+				entity2="explosion_mark"
+				randRotation2="true"
+				entity3="FX_dust_small"
+				anim2D="">
+			</FX>
+
+			<EffectRange radiusMeters="1.7">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
+				<DamageEffect chancePercent="100" damage="100" damageType="1"/>
+				<ScatterEffect chancePercent="100" armorPenetration="3"/>
+				<SuppressEffect amount="20"/>
+				<SmokeEffect durationMSec="1030" />
+			</EffectRange>
+			<EffectRange radiusMeters="2.0">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
+				<DamageEffect chancePercent="100" damage="100" damageType="1"/>
+				<ScatterEffect chancePercent="100" armorPenetration="3"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+			<EffectRange radiusMeters="4.2">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="800" outerRangeTimeMSec="500"/>
+				<DamageEffect chancePercent="50" damage="20" damageType="1"/>
+				<ScatterEffect chancePercent="100" rangeMeters="3" armorPenetration="0"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+<!--Lethal end-->
+<!--Throwables end-->
 
 <!--Equipment; P2: Gear-->
+
+<!--Gear end-->
+
 
 <!--Equipment; P3: Helmets + NVG's-->
 
 <!--Equipment; P4: Vests-->
+
+
+<!--Vests end-->
 
 <!--Equipment; P5: Misc-->
 
