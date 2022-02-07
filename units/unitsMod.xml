@@ -2,7 +2,7 @@
    <Unit
         name="REDACTED"
 		nameUI="[DataExpunged]"
-		description="Wait, who even are they?"
+		description="Wait who are they?"
 		flagTex="data/textures/gui/squads/rangers_bg_01.dds"
 		rndNameEntry="@#squadnamerangers">
 
