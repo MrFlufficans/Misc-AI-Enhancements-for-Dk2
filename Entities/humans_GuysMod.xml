@@ -24,10 +24,10 @@
 				<Item name="M68CCO"/>
 				<Item name="M17PistolC"/>
 				<Item name="IronSights_Pistol"/>
-				<Item name="Flashbang"/>
+				<Item name="Flashbangc"/>
 				<Item name="Slap Charge"/>
-				<Item name="Spy Camera"/>
 				<Item name="Crowbar"/>
+				<Item name="Lockpick"/>
 				<Item name="HelmetACH"/>
 				<Item name="Rangers SFLCS Level III"/>
 			</Equipment>
@@ -63,6 +63,7 @@
 				<Item name="Slap Charge"/>
 				<Item name="Spy Camera"/>
 				<Item name="Crowbar"/>
+				<Item name="Lockpick"/>
 				<Item name="HelmetACH"/>
 				<Item name="Rangers SFLCS Level III"/>
 			</Equipment>
@@ -99,6 +100,7 @@
 				<Item name="Slap Charge"/>
 				<Item name="Spy Camera"/>
 				<Item name="Crowbar"/>
+				<Item name="Lockpick"/>
 				<Item name="HelmetACH"/>
 				<Item name="Rangers SFLCS Level III"/>
 			</Equipment>
