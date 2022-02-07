@@ -2906,7 +2906,7 @@
 <!--Marksman Rifles End-->
 
 <!--Pistols-->
-	<Firearm name="M17 Pistol" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
+	<Firearm name="M17PistolC" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
 			tooltip="@firearm_m17_name"
 			description="@firearm_m17_desc"
 			img="data/models/weapons/m17_ui.dds"
@@ -2987,7 +2987,7 @@
 		</Sounds>
 	</Firearm>
 
-	<Firearm name="M18 Pistol" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="3"
+	<Firearm name="M18PistolC" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="3"
 			tooltip="@firearm_m18_name"
 			description="@firearm_m18_desc"
 			img="data/models/weapons/m18_ui.dds"
@@ -3068,7 +3068,7 @@
 		</Sounds>
 	</Firearm>
 
-	<Firearm name="G19X Pistol" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="3"
+	<Firearm name="G19XPistolC" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="3"
 			tooltip="@firearm_g19x_name"
 			description="@firearm_g19x_desc"
 			img="data/models/weapons/g19x_ui.dds"
@@ -3149,7 +3149,7 @@
 		</Sounds>
 	</Firearm>
 
-	<Firearm name="G2240 Pistol" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="4"
+	<Firearm name="G2240PistolC" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="4"
 			tooltip="@firearm_g2240_name"
 			description="@firearm_g2240_desc"
 			img="data/models/weapons/g22_ui.dds"
@@ -3228,7 +3228,7 @@
 		</Sounds>
 	</Firearm>
 
-	<Firearm name="1911 Pistol" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="6"
+	<Firearm name="1911PistolC" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="6"
 			tooltip="@firearm_1911_pistol_name"
 			description="@firearm_1911_pistol_desc"
 			img="data/models/weapons/1911_ui.dds"
