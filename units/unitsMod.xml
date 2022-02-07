@@ -7,14 +7,14 @@
 		rndNameEntry="@#squadnamerangers">
 
 		<Classes>
-			<Class name="FireteamLead" 	numSlots="1" iconTex="data/textures/gui/deploy/class_icon_support.dds"/>
-			<Class name="Rifleman" 	numSlots="1" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="FireteamLead" 			numSlots="1" iconTex="data/textures/gui/deploy/class_icon_support.dds"/>
+			<Class name="Rifleman" 				numSlots="1" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
 			<Class name="DesignatedMarksman"	numSlots="1" iconTex="data/textures/gui/deploy/class_icon_marksman.dds"/>
-			<Class name="AutoRifleman" numSlots="1" iconTex="data/textures/gui/deploy/class_icon_grenadier.dds"/>
+			<Class name="AutoRifleman" 			numSlots="1" iconTex="data/textures/gui/deploy/class_icon_grenadier.dds"/>
 		</Classes>
 
 		<TrooperRanks>
-			<Rank name="@trooper_rank_0" xpNeeded="0" 	badgeTex="data/textures/gui/customization/trooper_rank_01.dds"/>
+			<Rank name="@trooper_rank_0" xpNeeded="0" 		badgeTex="data/textures/gui/customization/trooper_rank_01.dds"/>
 			<Rank name="@trooper_rank_1" xpNeeded="700" 	badgeTex="data/textures/gui/customization/trooper_rank_02.dds"/>
 			<Rank name="@trooper_rank_2" xpNeeded="2300" 	badgeTex="data/textures/gui/customization/trooper_rank_03.dds"/>
 			<Rank name="@trooper_rank_3" xpNeeded="5600" 	badgeTex="data/textures/gui/customization/trooper_rank_04.dds"/>

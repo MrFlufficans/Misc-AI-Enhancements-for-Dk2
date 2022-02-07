@@ -351,109 +351,6 @@
 		</StaticImage>
 	</Item>
 
-	<Item name="REDACTED" origin="-18 42" hidden="true">
-		<OnOpen>
-			<Action type="SetOrigin" target="#deploy_squad_buttons" params="-18 215"/>
-		</OnOpen>
-
-		<StaticImage name="FireteamLead" origin="0 362">			
-			<StaticImage origin="8 0">
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="242" color="211e1dcc"/>
-				<StaticImage origin="0 0" align="t">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="46" color="cb893e"/>
-				</StaticImage>	
-				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" color="0c0b0b33"/>		
-				</StaticImage>					
-				<StaticImage origin="-16 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="242" color="f97b0380"/>		
-				</StaticImage>	
-				<StaticText origin="-6 98" text="@unit_rangers_assault" align="r" font="header_4" textColor="211e1d"/>
-				<StaticImage origin="8 98" align="l">
-					<RenderObject2D texture="data/textures/gui/deploy/class_icon_support.dds"/>
-				</StaticImage>				
-			</StaticImage>	
-			<Item origin="-128 23">
-				<StaticImage name="#slot0" origin="0 0">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
-				</StaticImage>
-			</Item>
-		</StaticImage>
-		<StaticImage name="Rifleman" origin="0 152">
-			<StaticImage origin="8 0">
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="148" color="211e1dcc"/>
-				<StaticImage origin="0 0" align="t">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="46" color="cb893e"/>
-				</StaticImage>	
-				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" color="0c0b0b33"/>		
-				</StaticImage>					
-				<StaticImage origin="-16 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="148" color="f97b0380"/>		
-				</StaticImage>	
-				<StaticText origin="-6 50" text="@unit_rangers_support" align="r" font="header_4" textColor="211e1d"/>
-				<StaticImage origin="8 50" align="l">
-					<RenderObject2D texture="data/textures/gui/deploy/class_icon_assaulter.dds"/>
-				</StaticImage>				
-			</StaticImage>				
-			<Item origin="-128 -24">
-				<StaticImage name="#slot1" origin="0 0">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
-				</StaticImage>
-			</Item>
-		</StaticImage>
-
-		<StaticImage name="DesignatedMarksman" origin="0 -11">	
-			<StaticImage origin="8 0">
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="148" color="211e1dcc"/>
-				<StaticImage origin="0 0" align="t">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="46" color="cb893e"/>
-				</StaticImage>	
-				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" color="0c0b0b33"/>		
-				</StaticImage>					
-				<StaticImage origin="-16 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="148" color="f97b0380"/>		
-				</StaticImage>	
-				<StaticText origin="-6 50" text="@unit_rangers_marksman" align="r" font="header_4" textColor="211e1d"/>
-				<StaticImage origin="8 50" align="l">
-					<RenderObject2D texture="data/textures/gui/deploy/class_name_icon_marksman.dds"/>
-				</StaticImage>		
-			</StaticImage>				
-
-			<Item origin="-128 -24">
-				<StaticImage name="#slot2" origin="0 0">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
-				</StaticImage>
-			</Item>
-		</StaticImage>
-
-		<StaticImage name="AutoRifleman" origin="0 -174">			
-			<StaticImage origin="8 0">
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="148" color="211e1dcc"/>
-				<StaticImage origin="0 0" align="t">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="46" color="cb893e"/>
-				</StaticImage>	
-				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" color="0c0b0b33"/>		
-				</StaticImage>					
-				<StaticImage origin="-16 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="148" color="f97b0380"/>		
-				</StaticImage>	
-				<StaticText origin="-6 50" text="@unit_rangers_grenadier" align="r" font="header_4" textColor="211e1d"/>
-				<StaticImage origin="8 50" align="l">
-					<RenderObject2D texture="data/textures/gui/deploy/class_name_icon_grenadier.dds"/>
-				</StaticImage>	
-			</StaticImage>			
-
-			<Item origin="-128 -24">
-				<StaticImage name="#slot3" origin="0 0">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
-				</StaticImage>
-			</Item>
-		</StaticImage>
-	</Item>
-    
 	<Item name="CIA" origin="-18 42" hidden="true">
 		<OnOpen>
 			<Action type="SetOrigin" target="#deploy_squad_buttons" params="-18 629"/>
@@ -511,6 +408,93 @@
 				</StaticImage>
 
 				<StaticImage name="#slot3" origin="90 0">
+					<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
+				</StaticImage>
+			</Item>
+		</StaticImage>
+	</Item>
+
+	<Item name="REDACTED" origin="-18 42" hidden="true">
+		<OnOpen>
+			<Action type="SetOrigin" target="#deploy_squad_buttons" params="-18 629"/>
+		</OnOpen>
+		<StaticImage name="FireteamLead" origin="-95 407">			
+			<StaticImage origin="8 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="190" sizeY="148" color="211e1dcc"/>
+				<StaticImage origin="0 0" align="t">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="190" sizeY="46" color="cb893e"/> <!-- This is the Name Banner Colour -->
+				</StaticImage>
+				<StaticImage origin="-16 0" align="lt">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="148" color="f97b0380"/>		
+				</StaticImage>	
+				<StaticText origin="0 50" text="FireTeam Lead" font="header_4" textColor="211e1d"/> <!-- Visible Class Text -->
+				<StaticImage origin="4 0" align="l">
+					<RenderObject2D texture="data/textures/gui/deploy/class_name_icon_undercover.dds" sizeX="50" sizeY="50"/>
+				</StaticImage>	
+			</StaticImage>						
+
+			<Item origin="9 -22">
+				<StaticImage name="#slot0" origin="0 0">
+					<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
+				</StaticImage>
+			</Item>
+		</StaticImage>
+
+		<StaticImage name="Rifleman" origin="95 407" hidden="false">			
+			<StaticImage origin="8 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="190" sizeY="148" color="211e1dcc"/>
+				<StaticImage origin="0 0" align="t">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="190" sizeY="46" color="cb893e"/> <!-- This is the Name Banner Colour -->
+				</StaticImage>
+				<StaticText origin="0 50" text="Rifleman" font="header_4" textColor="211e1d"/> <!-- Visible Class Text -->
+				<StaticImage origin="4 0" align="l">
+					<RenderObject2D texture="data/textures/gui/deploy/class_name_icon_blackops.dds" sizeX="50" sizeY="50"/>
+				</StaticImage>
+			</StaticImage>				
+
+			<Item origin="9 -22">
+				<StaticImage name="#slot1" origin="0 0">
+					<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
+				</StaticImage>
+			</Item>
+		</StaticImage>
+
+        <StaticImage name="DesignatedMarksman" origin="-95 243">			
+			<StaticImage origin="8 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="190" sizeY="148" color="211e1dcc"/>
+				<StaticImage origin="0 0" align="t">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="190" sizeY="46" color="cb893e"/> <!-- This is the Name Banner Colour -->
+				</StaticImage>
+				<StaticImage origin="-16 0" align="lt">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="148" color="f97b0380"/>		
+				</StaticImage>	
+				<StaticText origin="0 50" text="Marksman" font="header_4" textColor="211e1d"/> <!-- Visible Class Text -->
+				<StaticImage origin="4 0" align="l">
+					<RenderObject2D texture="data/textures/gui/deploy/class_name_icon_undercover.dds" sizeX="50" sizeY="50"/>
+				</StaticImage>	
+			</StaticImage>						
+
+			<Item origin="9 -22">
+				<StaticImage name="#slot2" origin="0 0">
+					<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
+				</StaticImage>
+			</Item>
+		</StaticImage>
+
+		<StaticImage name="AutoRifleman" origin="95 243" hidden="false">			
+			<StaticImage origin="8 0">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="190" sizeY="148" color="211e1dcc"/>
+				<StaticImage origin="0 0" align="t">
+					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="190" sizeY="46" color="cb893e"/> <!-- This is the Name Banner Colour -->
+				</StaticImage>
+				<StaticText origin="0 50" text="AutoRifleman" font="header_4" textColor="211e1d"/> <!-- Visible Class Text -->
+				<StaticImage origin="4 0" align="l">
+					<RenderObject2D texture="data/textures/gui/deploy/class_name_icon_blackops.dds" sizeX="50" sizeY="50"/>
+				</StaticImage>
+			</StaticImage>				
+
+			<Item origin="9 -22">
+				<StaticImage name="#slot3" origin="0 0">
 					<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
 				</StaticImage>
 			</Item>
