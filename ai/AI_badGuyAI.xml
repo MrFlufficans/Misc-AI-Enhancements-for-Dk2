@@ -2,13 +2,13 @@
 	<Behavior name="Normal Guy">
 		<Bind evt="IDLE_TICK" 				prio="0" activity="IDLE_RELAXED"/>
 		<Bind evt="CMD_PATROL" 				prio="1" activity="IDLE_RELAXED"/>
-		<Bind evt="HEAR_SUSPICIOUS" 		prio="2" activity="INVESTIGATE"/>
-		<Bind evt="HEAR_COMBAT" 			prio="3" becomeAlerted="1" activity="INVESTIGATE"/>
-		<Bind evt="SEE_FRIENDLY_COMBAT" 	prio="4" becomeAlerted="1" activity="INVESTIGATE"/>
+		<Bind evt="HEAR_SUSPICIOUS" 		prio="6" activity="INVESTIGATE"/>
+		<Bind evt="HEAR_COMBAT" 			prio="9" becomeAlerted="1" activity="INVESTIGATE"/>
+		<Bind evt="SEE_FRIENDLY_COMBAT" 	prio="7" becomeAlerted="1" activity="INVESTIGATE"/>
 		<Bind evt="TROOPERS_REACHED_TARGET" prio="1" activity="INVESTIGATE"/> 
 		<Bind evt="HEAR_SNIPER_SHOT" 		prio="5" activity="SWITCH_TO_COMBAT"/>
 		<Bind evt="SEE_DEAD_FRIENDLY" 		prio="5" activity="SWITCH_TO_COMBAT"/>
-		<Bind evt="SEE_DOOR_OPEN" 			prio="5" activity="INVESTIGATE"/>
+		<Bind evt="SEE_DOOR_OPEN" 			prio="8" activity="INVESTIGATE"/>
 		<Bind evt="CMD_RUN_TO" 				prio="5" activity="IDLE_RELAXED"/>
 		<Bind evt="SELF_TOOK_DAMAGE" 		prio="6" becomeAlerted="1" activity="SWITCH_TO_COMBAT"/>
 		<Bind evt="SEE_ENEMY" 				prio="10" activity="SWITCH_TO_COMBAT"/>
@@ -31,11 +31,11 @@
 	<Behavior name="Normal Combat" 			inherit="Normal Guy">
 		<Bind evt="IDLE_TICK" 				prio="0" activity="IDLE_COMBAT"/>
 		<Bind evt="CMD_PATROL" 				prio="1" activity="IDLE_COMBAT"/>
-		<Bind evt="SEE_DEAD_FRIENDLY" 		prio="3" activity="INVESTIGATE"/>
+		<Bind evt="SEE_DEAD_FRIENDLY" 		prio="8" activity="INVESTIGATE"/>
 		<Bind evt="CMD_RUN_TO" 				prio="5" activity="IDLE_COMBAT"/>
 		<Bind evt="CMD_SUPPRESS_FIRE" 		prio="6" activity="ENGAGE_ENEMY"/>
 		<Bind evt="SEE_DOOR_OPEN" 			prio="7" activity="INVESTIGATE"/>
-		<Bind evt="HEAR_SNIPER_SHOT" 		prio="13" activity="AVOID_SNIPER"/>
+		<Bind evt="HEAR_SNIPER_SHOT" 		prio="17" activity="AVOID_SNIPER"/>
 		<Bind evt="SEE_ENEMY" 				prio="8" activity="ENGAGE_ENEMY"/>
 	</Behavior>
 	
