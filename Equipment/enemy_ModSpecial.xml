@@ -3,11 +3,11 @@ enemies are now much more RNG on health-->
 <Equipment>
 	<Armor name="Human Variables" inventoryBinding="Armor" unlockCost="0"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="0"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
 		<Params protectionInfoText="@equipment_protect1">
-			<ProtectionArc degrees="90" coveragePercent="40" piercingProtectionLevel="3"/>
-			<ProtectionArc degrees="270" coveragePercent="20" piercingProtectionLevel="3"/>
-			<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="3"/>
+			<ProtectionArc degrees="90" coveragePercent="40" piercingProtectionLevel="2.5"/>
+			<ProtectionArc degrees="270" coveragePercent="20" piercingProtectionLevel="2.5"/>
+			<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="2.5"/>
 		</Params>
 	</Armor>
 </Equipment>
