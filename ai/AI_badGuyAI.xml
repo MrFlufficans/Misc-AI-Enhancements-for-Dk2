@@ -36,7 +36,7 @@
 		<Bind evt="CMD_SUPPRESS_FIRE" 		prio="6" activity="ENGAGE_ENEMY"/>
 		<Bind evt="SEE_DOOR_OPEN" 			prio="7" activity="INVESTIGATE"/>
 		<Bind evt="HEAR_SNIPER_SHOT" 		prio="17" activity="AVOID_SNIPER"/>
-		<Bind evt="SEE_ENEMY" 				prio="8" activity="ENGAGE_ENEMY"/>
+		<Bind evt="SEE_ENEMY" 				prio="15" activity="ENGAGE_ENEMY"/>
 	</Behavior>
 	
 	<Behavior name="Suicide Combat" 		inherit="Normal Guy">
