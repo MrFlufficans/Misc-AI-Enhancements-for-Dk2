@@ -1,0 +1,21 @@
+<Equipment>
+    <Ammo name="12GA00BUCK_CRUISER"
+			tooltip="@ammo_12GA00BUCK_name"
+			description="@ammo_12GA00BUCK_desc"
+			img="data/models/weapons/attachments/m257_buckshot_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params roundsPerSecond="1.2"
+				audibleSoundRadius="30"
+				physicsImpactForce="3.0"
+				damageType="0"
+				silenced="0">
+
+			<Damage start="14" end="3" startDist="0" endDist="40"/>
+
+			<CriticalChancePercent start="5" end="0" startDist="0" endDist="15"/>
+			<ArmorPenetration start="4" end="2" startDist="0" endDist="15"/>
+		</Params>
+	</Ammo>
+</Equipment>
